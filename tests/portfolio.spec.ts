@@ -113,19 +113,37 @@ for (const width of [360, 390, 1280, 1440, 1536]) {
   });
 }
 
-test("enlarged text at a narrow width does not cause page overflow", async ({
-  page,
-}) => {
-  await page.setViewportSize({ width: 360, height: 900 });
-  await page.goto("/");
-  await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
-  expect(
-    await page.evaluate(
-      () => document.documentElement.scrollWidth <= window.innerWidth,
-    ),
-  ).toBe(true);
-  await expect(page.locator('#contact a[href="' + email + '"]')).toBeVisible();
-});
+for (const width of [360, 701, 900, 1100, 1101, 1280, 1440]) {
+  test(`enlarged text at ${width}px stays within its layout`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/");
+    await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth,
+      ),
+    ).toBe(true);
+    if (width > 700) {
+      const copyLeft = await page
+        .locator(".intro-support")
+        .evaluate((node) => node.getBoundingClientRect().left);
+      const headlineRight = await page.locator("h1").evaluate((node) => {
+        const range = document.createRange();
+        range.selectNodeContents(node);
+        return Math.max(
+          ...Array.from(range.getClientRects(), (rect) => rect.right),
+        );
+      });
+      expect(headlineRight).toBeLessThanOrEqual(copyLeft + 1);
+    }
+    const contact = page.locator('#contact a[href="' + email + '"]');
+    await expect(contact).toBeVisible();
+    const contactBox = await contact.boundingBox();
+    expect(contactBox!.x + contactBox!.width).toBeLessThanOrEqual(width);
+  });
+}
 
 test("reduced motion keeps all content visible and turns off smooth scrolling", async ({
   page,

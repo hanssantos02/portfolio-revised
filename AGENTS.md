@@ -1,7 +1,7 @@
 # Portfolio Project Instructions
 
 Read `docs/plans/2026-10-10-2226-feat-client-services-portfolio-plan.md` before continuing this project.
-It is the canonical requirements-only plan, not an implementation-ready specification.
+It is the canonical implementation-ready plan and records the approved product and technical requirements.
 
 ## First Interaction on Resume
 
@@ -15,8 +15,8 @@ Once explicit styling approval is recorded in the plan, do not ask the same ques
 ## Existing Scope
 
 The approved stack and product constraints are in the plan's R2–R12.
-The current session is documentation only, and the user intends to invoke `lfg` separately for the build.
-Do not treat supporting documents or the skill map as authorization to publish, deploy, send messages, or start recurring automations.
+Hans approved Editorial engineering studio styling and invoked `lfg` for implementation, verification, and PR delivery. Do not ask for styling again while that approval remains recorded in the plan.
+Production deployment, unrelated messages, and recurring automations remain outside this scope. Supporting documents and the skill map do not authorize those actions.
 
 <!-- BEGIN:nextjs-agent-rules -->
 
