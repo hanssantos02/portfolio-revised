@@ -60,7 +60,8 @@ export const projects: Project[] = [
     id: "ledger",
     title: "Ledger",
     kind: "Personal web project",
-    summary: "A browser task organiser that keeps projects, priorities, and due dates in one place.",
+    summary:
+      "A browser task organiser that keeps projects, priorities, and due dates in one place.",
     details: [
       "Create projects, add tasks, and mark them complete.",
       "Tasks include priorities and optional due dates; project data is saved in the browser with localStorage.",
@@ -72,7 +73,8 @@ export const projects: Project[] = [
       width: 1268,
       height: 713,
       alt: "Ledger showing the Portfolio demo project, with three example tasks at high, medium, and low priority and one marked complete.",
-      caption: "Live demo captured on 10 October 2026. Example project and tasks entered for this screenshot.",
+      caption:
+        "Live demo captured on 10 October 2026. Example project and tasks entered for this screenshot.",
     },
     demo: {
       type: "available",
@@ -87,7 +89,8 @@ export const projects: Project[] = [
     id: "library",
     title: "Library",
     kind: "Personal web project",
-    summary: "A browser book tracker for organising a reading list and finding the next book.",
+    summary:
+      "A browser book tracker for organising a reading list and finding the next book.",
     details: [
       "Add books with validated titles, authors, and page counts, then toggle their read status.",
       "Search by title or author and filter by read status. Changes last for the current page session.",
@@ -99,7 +102,8 @@ export const projects: Project[] = [
       width: 1268,
       height: 713,
       alt: "Library showing its three default sample books, a title or author search field, and All, Read, and To read filters.",
-      caption: "Live demo captured on 10 October 2026 with its three default sample books.",
+      caption:
+        "Live demo captured on 10 October 2026 with its three default sample books.",
     },
     demo: {
       type: "available",
@@ -114,16 +118,19 @@ export const projects: Project[] = [
     id: "smart-drawer",
     title: "Smart Fingerprint Unlock Drawer",
     kind: "Personal embedded project",
-    summary: "ESP32 firmware for a drawer that pairs fingerprint access with a local browser dashboard.",
+    summary:
+      "ESP32 firmware for a drawer that pairs fingerprint access with a local browser dashboard.",
     details: [
       "The firmware connects a fingerprint sensor over UART and controls unlocking and automatic relocking.",
       "It supports fingerprint enrollment and a Wi-Fi browser dashboard for user management and recent activity.",
     ],
-    sourceUrl: "https://github.com/hanssantos02/Smart-Fingerprint-Unlock-Drawer",
+    sourceUrl:
+      "https://github.com/hanssantos02/Smart-Fingerprint-Unlock-Drawer",
     media: {
       type: "diagram",
       id: "smart-drawer",
-      caption: "Illustrative diagram of source-confirmed component relationships. Hardware photos and video are pending.",
+      caption:
+        "Illustrative diagram of source-confirmed component relationships. Hardware photos and video are pending.",
     },
     demo: {
       type: "unavailable",

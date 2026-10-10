@@ -11,8 +11,9 @@ const studioFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Client Services Portfolio",
-  description: "Client services portfolio.",
+  title: "Hans Santos — Web, Apps & Embedded Systems",
+  description:
+    "Web development, app development, electronics engineering, and embedded systems by Hans Santos in Batangas, Philippines. Explore personal projects and discuss your next build.",
 };
 
 export default function RootLayout({
