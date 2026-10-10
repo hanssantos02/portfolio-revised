@@ -1,0 +1,13 @@
+/node_modules/
+/.next/
+/out/
+/build/
+/test-results/
+/playwright-report/
+/.impeccable/build/
+/.impeccable/review/
+*.tsbuildinfo
+.DS_Store
+*.log
+.env*
+!.env.example
