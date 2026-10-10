@@ -4,6 +4,26 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { ProjectEntry } from "../src/components/selected-work";
 import { projects, type Project } from "../src/content/portfolio";
 
+test("Cloak keeps its video and source available while the live demo is pending", async ({
+  page,
+}) => {
+  await page.goto("/#cloak-heading");
+  const cloak = page.getByRole("article", { name: "Cloak", exact: true });
+  await expect(cloak.getByRole("img")).toBeVisible();
+  await expect(cloak.getByText(/fictional demo data/)).toBeVisible();
+  await expect(
+    cloak.getByRole("link", { name: "Watch Cloak motion video" }),
+  ).toHaveAttribute("href", "https://vt.tiktok.com/ZSbvj6Bhr/");
+  await expect(
+    cloak.getByRole("link", { name: "View Cloak source" }),
+  ).toHaveAttribute("href", "https://github.com/Jedddy/appbuilders-ceres");
+  await expect(
+    cloak.getByRole("button", { name: "Open Cloak demo" }),
+  ).toBeDisabled();
+  await expect(cloak.getByRole("link", { name: /demo/ })).toHaveCount(0);
+  await expect(cloak.getByText(/Live demo temporarily unavailable/)).toBeVisible();
+});
+
 test("hardware evidence identifies the diagram and preserves the firmware source", async ({
   page,
 }) => {

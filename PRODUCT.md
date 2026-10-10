@@ -34,6 +34,8 @@ Hans approved Editorial engineering studio on 2026-10-10: warm ivory, near-black
 
 Identity, contact destinations, and source inventory: `docs/portfolio-content.md`. Source-reviewed candidates are Ledger, Library, and Smart Fingerprint Unlock Drawer. Real screenshots must be captured from working demos. Hardware photos/video are unavailable; use a clearly labeled illustrative diagram. Ledger stores tasks locally; Library does not persist books across refresh; drawer firmware intent does not prove physical operation or security assurance.
 
+Hans added Cloak on 11 October 2026: a source-reviewed hackathon application with an authentic local-interface capture. Its public demo is temporarily unavailable; show an inactive placeholder and preserve the owner-supplied motion-video link. Keep its fictional screenshot data and rules-only capture scope explicit.
+
 ## Product Principles
 
 - Explain what a client can hire Hans for before presenting proof.

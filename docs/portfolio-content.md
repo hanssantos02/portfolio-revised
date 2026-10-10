@@ -33,6 +33,8 @@ No prices, turnaround commitments, agency team, professional licenses, certifica
 
 ## Evidence Use
 
+Hans added **Cloak** on 11 October 2026 from `/home/nexus/repos/appbuilders-ceres/`. The source repository is [Jedddy/appbuilders-ceres](https://github.com/Jedddy/appbuilders-ceres). Its live demo is temporarily unavailable; retain an inactive placeholder without a destination. Hans supplied the [motion video](https://vt.tiktok.com/ZSbvj6Bhr/) as the video action. Source inspection and local capture provenance are recorded in `docs/project-evidence.md`.
+
 Apply the plan's R6–R8 and R12 rather than treating the full inventory as a mandatory featured list.
 Prefer the strongest verified work and enough project context to show purpose, contribution, and observable behavior.
 Do not label personal or learning projects as paid client commissions.

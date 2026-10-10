@@ -2,6 +2,7 @@
 export function SmartDrawerDiagram() {
   return (
     <div
+      role="group"
       className="drawer-diagram"
       aria-label="Illustrative component diagram for the smart drawer"
     >

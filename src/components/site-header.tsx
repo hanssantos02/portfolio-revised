@@ -12,7 +12,9 @@ export function SiteHeader() {
       const sections = ["intro", "services", "work", "approach", "contact"]
         .map((id) => document.getElementById(id))
         .filter((section): section is HTMLElement => section !== null);
-      const readingLine = window.innerHeight * 0.35;
+      const viewportHeight = Math.max(1, window.innerHeight);
+      const readingLine = Math.round(viewportHeight * 0.35);
+      const bottomMargin = Math.max(0, viewportHeight - readingLine - 2);
       // Observe a narrow reading line. Recheck every section when it crosses a
       // boundary: observer entries only contain changed intersections.
       observer = new IntersectionObserver(
@@ -24,7 +26,7 @@ export function SiteHeader() {
           setActive(current?.id ?? "");
         },
         {
-          rootMargin: `-${readingLine}px 0px -${window.innerHeight - readingLine - 2}px 0px`,
+          rootMargin: `-${readingLine}px 0px -${bottomMargin}px 0px`,
         },
       );
       for (const section of sections) observer.observe(section);
@@ -49,8 +51,19 @@ export function SiteHeader() {
         Skip to content
       </a>
       <a className="brand" href="#intro" aria-label="Hans Santos, home">
+        <svg
+          className="brand-mark"
+          viewBox="0 0 32 32"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M7 4V28M25 4V28M7 16H25M12 28V19M20 4V13"
+            stroke="currentColor"
+            strokeWidth="3"
+          />
+        </svg>
         Hans Santos.
-        <span aria-hidden="true" />
       </a>
       <nav aria-label="Main navigation">
         {[

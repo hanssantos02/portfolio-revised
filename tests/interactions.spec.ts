@@ -13,7 +13,7 @@ test("service explorer changes its sketch and sends clients to relevant work", a
     explorer.getByRole("button", { name: "Web", exact: true }),
   ).toHaveAttribute("aria-pressed", "false");
   await expect(page.locator("#explorer-view")).toContainText(
-    "Firmware that connects software and hardware.",
+    "Firmware and hardware integration that help devices sense, communicate, and respond to the world around them.",
   );
   await page.getByRole("link", { name: "Explore the firmware" }).click();
   await expect(
@@ -24,8 +24,8 @@ test("service explorer changes its sketch and sends clients to relevant work", a
   ).toBeInViewport();
   await explorer.getByRole("button", { name: "Apps", exact: true }).click();
   await expect(
-    page.getByRole("link", { name: "Discuss an application" }),
-  ).toHaveAttribute("href", "#contact");
+    page.getByRole("link", { name: "Explore Cloak" }),
+  ).toHaveAttribute("href", "#cloak-heading");
 });
 
 test("service explorer works with a keyboard and reduced motion", async ({
@@ -34,6 +34,7 @@ test("service explorer works with a keyboard and reduced motion", async ({
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
   const web = page.getByRole("button", { name: "Web", exact: true });
+  await expect(web).toBeEnabled();
   await web.focus();
   await page.keyboard.press("Tab");
   await expect(
@@ -92,4 +93,30 @@ test("sticky navigation identifies the section in view", async ({ page }) => {
       .getByRole("navigation")
       .getByRole("link", { name: "Work", exact: true }),
   ).toHaveAttribute("aria-current", "location");
+});
+
+test("navigation recovers after the viewport height collapses", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(
+    page.getByRole("button", { name: "Web", exact: true }),
+  ).toBeEnabled();
+  await page.setViewportSize({ width: 390, height: 1 });
+  await page.evaluate(
+    () => new Promise((resolve) => requestAnimationFrame(resolve)),
+  );
+  await page.setViewportSize({ width: 390, height: 900 });
+  await page
+    .getByRole("navigation")
+    .getByRole("link", { name: "Services", exact: true })
+    .click();
+  await expect(
+    page
+      .getByRole("navigation")
+      .getByRole("link", { name: "Services", exact: true }),
+  ).toHaveAttribute("aria-current", "location");
+  expect(errors).toEqual([]);
 });

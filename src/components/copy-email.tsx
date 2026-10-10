@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { contact } from "@/content/portfolio";
+import { useClientReady } from "./use-client-ready";
 
 export function CopyEmail() {
+  const ready = useClientReady();
   const [status, setStatus] = useState("");
   async function copy() {
     try {
@@ -15,7 +17,7 @@ export function CopyEmail() {
   }
   return (
     <div className="copy-email">
-      <button type="button" onClick={copy}>
+      <button type="button" disabled={!ready} onClick={copy}>
         Copy email address{" "}
         <svg
           viewBox="0 0 24 24"

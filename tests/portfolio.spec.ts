@@ -8,7 +8,7 @@ test("clients can understand services, inspect work, and contact Hans", async ({
 }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "Your idea, built to work.",
+    "Digital ideas.Real-world solutions.",
   );
   for (const name of [
     "Web development",
@@ -33,12 +33,12 @@ test("clients can understand services, inspect work, and contact Hans", async ({
   ).toBeVisible();
 });
 
-for (const section of ["services", "work", "contact"]) {
+for (const section of ["intro", "services", "work", "contact"]) {
   test(`direct ${section} link brings its heading into view`, async ({
     page,
   }) => {
     await page.goto(`/#${section}`);
-    const heading = page.locator(`#${section} h2`);
+    const heading = page.locator(`#${section} :is(h1, h2)`);
     await expect(heading).toBeInViewport();
     const box = await heading.boundingBox();
     expect(box?.y).toBeGreaterThanOrEqual(0);
@@ -56,7 +56,7 @@ test("keyboard traversal has a visible skip link and focus treatment", async ({
   await page.keyboard.press("Enter");
   await expect(page.locator("main")).toBeFocused();
   const reached = new Set<string>();
-  for (let count = 0; count < 32; count++) {
+  for (let count = 0; count < 40; count++) {
     await page.keyboard.press("Tab");
     const focused = page.locator(":focus");
     const href = await focused.getAttribute("href");
@@ -75,6 +75,17 @@ test.describe("without JavaScript", () => {
   test.use({ javaScriptEnabled: false });
   test("content and navigation remain usable", async ({ page }) => {
     await page.goto("/");
+    for (const name of [
+      "Web",
+      "Apps",
+      "Electronics",
+      "Embedded",
+      "Copy email address",
+    ]) {
+      await expect(
+        page.getByRole("button", { name, exact: true }),
+      ).toBeDisabled();
+    }
     await expect(
       page.getByRole("heading", { name: "App development", exact: true }),
     ).toBeVisible();
@@ -89,7 +100,7 @@ test.describe("without JavaScript", () => {
   });
 });
 
-for (const width of [360, 390, 1280, 1440, 1536]) {
+for (const width of [360, 390, 768, 1024, 1280, 1440, 1536, 1920]) {
   test(`layout remains usable at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/");

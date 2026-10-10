@@ -9,6 +9,7 @@ U2 establishes the content and evidence used by the portfolio. Verification and 
 | Four service offers | Hans's approved offers in `docs/portfolio-content.md` and the canonical plan | R3, R5 |
 | Ledger screenshot and copy | `hanssantos02/todo-list`, revision `d393d24522104fb785cb4e438001766049c45da9`; running demo | R5–R6, R8, R12 |
 | Library screenshot and copy | `hanssantos02/Library`, revision `b922d10ffeda259151cb2b0717433a0be803edb2`; running demo | R5–R6, R8, R12 |
+| Cloak screenshot and copy | Owner-supplied local `appbuilders-ceres` checkout, revision `61d6bcc2dd162e378b922ff53b65f8540b5a3616`; source and real local interface; reviewed 2026-10-11 | R5–R6, R8, R12 |
 | Smart Fingerprint Unlock Drawer copy and diagram | `hanssantos02/Smart-Fingerprint-Unlock-Drawer`, revision `ba11f70731c79f7df36f25c81aa1ebf8a78c6129`; README and firmware | R5, R7–R8, R12; F2 |
 | Email and Facebook | Exact owner-supplied destinations in `docs/portfolio-content.md` | R9; AE6 |
 | Independent media and demo variants | `src/content/portfolio.ts` | R7, R12; F4; AE4, AE8; KTD3–KTD4 |
@@ -45,6 +46,17 @@ The source revision and verification date are stored separately from visitor cop
 - Demo: `type: "unavailable"`. No public hardware demo was supplied. The repository source remains available independently.
 - Limits: no real hardware photographs or videos were provided. No security guarantee, measured performance, customer, or production-readiness claim is supported. The dashboard code has no login/authentication layer. Hardware photos and video remain pending from Hans.
 
+## Cloak — added 11 October 2026
+
+- Hans requested this addition from `/home/nexus/repos/appbuilders-ceres/`. Its clean checkout identifies [Jedddy/appbuilders-ceres](https://github.com/Jedddy/appbuilders-ceres) as the source repository, revision `61d6bcc2dd162e378b922ff53b65f8540b5a3616`. The repository returned HTTP 200 during inspection.
+- Kind: **Hackathon application project**, supported by its `PRODUCT.md` AppBuildersPH Hackathon context. This label does not claim a prize, sole authorship, paying customer, or commercial result.
+- Source: `components/package-workspace.tsx`, `components/review-panel.tsx`, `components/preview-panel.tsx`, `lib/server/pipeline.ts`, `lib/server/export.ts`, `lib/server/layers.ts`, and `lib/ai/`. These implement recipient-aware review, keep/redact decisions, preview, rules/OCR/local-model detection, and rebuilt exports with unchanged originals. Stack labels trace to `package.json` and the wired detection/AI layers.
+- Capture: `public/projects/cloak.webp`, **1280 × 720 px**, captured from the actual local Review screen on 11 October 2026. The isolated `/tmp/cloak-portfolio-preview` workspace used a fictional “Northwind Studio (demo)” recipient and “Contractor handoff · demo” package, with `fixtures/demo-package/notes.md` uploaded through the actual API and scanned in rules-only mode. No interface elements were composited or generated; no existing user workspace was read or modified.
+- Screenshot scope: real interface and rules-only findings. It does not demonstrate AI-model accuracy or guarantee detection of every sensitive item. The caption explicitly names fictional data and rules-only mode.
+- Live demo: Hans reported it is temporarily unavailable. The pending demo has no URL and renders a disabled placeholder; it does not link to a blank URL or reload the portfolio. Change `demo` to `{ type: "available", url: "…" }` when a genuine working destination is supplied.
+- Motion video: [owner-supplied TikTok link](https://vt.tiktok.com/ZSbvj6Bhr/). It is a separate external action, not an embedded video or a substitute claim that the public application is working.
+- Browser coverage asserts the authentic image/caption, exact video and source URLs, disabled demo, and absence of a demo link.
+
 ## Contact
 
 - Email address: `hansprielasantos02@gmail.com`; link destination must be `mailto:hansprielasantos02@gmail.com`.
@@ -73,3 +85,9 @@ Update this document's provenance and remove the illustrative caption for that m
 ## Verification status
 
 U2 uses manual source and capture inspection, actual image metadata, and TypeScript checks as replacement verification for this content/asset unit. No existing browser tests were present at intake. The completed production suite verifies U2's content alongside the page/media components from U3–U4: exact contact links, text media with unavailable demo, diagram/image replacement, visible diagram labeling, and intercepted image failure. `tests/portfolio.spec.ts` and `tests/media.spec.ts` also cover keyboard use, no JavaScript, five viewport widths, enlarged text, and reduced motion. Browser verification uses installed Chrome through Playwright; the default browser download timed out.
+
+## Redesign evidence review — 11 October 2026
+
+The redesign retains the original authentic screenshot files, capture dates, sample-data disclosures, source revisions, project limitations, and exact contacts. It adds `purpose` and `technologies` to the typed project model. Ledger's JavaScript/localStorage labels trace to its recorded entry point and storage module. Library's JavaScript/HTML/CSS labels describe its existing browser implementation. The drawer's ESP32, C++/Arduino, UART, and Wi-Fi labels trace to the recorded firmware and README. Purpose statements explain the same implemented capabilities; they do not add customer outcomes.
+
+Both existing public demo URLs returned HTTP 200 during the redesign review. This reachability check does not re-date the original source inspection or guarantee future availability. The three personal projects remain distinct from service illustrations and commissioned work. No hardware photograph, hardware test result, security guarantee, or application case study was added.

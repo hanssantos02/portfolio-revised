@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header";
 import { Services } from "@/components/services";
 import { SelectedWork } from "@/components/selected-work";
+import { AboutProcess } from "@/components/about-process";
 import { contact } from "@/content/portfolio";
 import { Arrow } from "@/components/arrow";
 import { BuildExplorer } from "@/components/build-explorer";
@@ -10,121 +11,105 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
-      <main id="main" tabIndex={-1} className="shell">
-        <section id="intro" className="intro" aria-labelledby="intro-heading">
+      <main id="main" tabIndex={-1}>
+        <section
+          id="intro"
+          className="intro shell"
+          aria-labelledby="intro-heading"
+        >
+          <h1 id="intro-heading">
+            Digital ideas.
+            <br />
+            <span>Real-world solutions.</span>
+          </h1>
           <div className="intro-grid">
-            <div className="intro-copy">
-              <h1 id="intro-heading">
-                Your idea, <br />
-                <span>built to work.</span>
-              </h1>
-              <div className="intro-support">
+            <div className="intro-support">
+              <p>
+                I’m Hans Santos, A Civil Engineering Graduate. The Electronics Engineer and Software Engineer of JM 3D Designs. I build
+                websites, applications, electronics, and embedded systems that
+                turn your idea into something practical.
+              </p>
+              <a href="#contact" className="primary-link">
+                Let’s talk about your project <Arrow />
+              </a>
+              <a href="#work" className="text-link explore">
+                Explore the work <Arrow />
+              </a>
+              <div className="intro-identity">
+                <span className="identity-mark" aria-hidden="true" />
                 <p>
-                  Websites, apps, electronics, and embedded systems. I’m Hans
-                  Santos — I turn ideas into practical builds.
+                  Independent by design.
+                  <br />
+                  Batangas, Philippines.
                 </p>
-                <a href="#contact" className="primary-link">
-                  Let’s talk about your project <Arrow />
-                </a>
-                <a href="#work" className="text-link explore">
-                  Explore the work <Arrow />
-                </a>
               </div>
             </div>
             <BuildExplorer />
           </div>
           <div className="intro-foot">
-            <p>Developer &amp; maker · Batangas, Philippines</p>
+            <p>From the browser to the circuit board.</p>
             <a href="#services">
               Find your starting point <Arrow />
             </a>
           </div>
         </section>
         <Services />
-        <section id="work" className="work" aria-labelledby="work-heading">
-          <div className="work-header">
-            <h2 id="work-heading">
-              A few things
-              <br />
-              I’ve built.
-            </h2>
-            <p>
-              Real projects. A closer look at the interfaces, ideas, and systems
-              behind them.
-            </p>
-          </div>
-          <SelectedWork />
-        </section>
         <section
-          id="approach"
-          className="approach"
-          aria-labelledby="approach-heading"
+          id="work"
+          className="work section-space"
+          aria-labelledby="work-heading"
         >
-          <h2 id="approach-heading">
-            From the first conversation
-            <br />
-            to a practical build.
-          </h2>
-          <div className="approach-body">
-            <p className="personal-context">
-              I’m Hans, a developer and maker based in Batangas. I work across
-              software and electronics, connecting an idea with the pieces it
-              needs to work.
-            </p>
-            <ol className="approach-steps">
-              <li>
-                <h3>Discuss the idea</h3>
-                <p>
-                  Talk through what you need, who it’s for, and the scope of the
-                  build.
-                </p>
-              </li>
-              <li>
-                <h3>Build the pieces</h3>
-                <p>
-                  Turn the agreed scope into an interface, a circuit, or
-                  firmware — and connect them where needed.
-                </p>
-              </li>
-              <li>
-                <h3>Review it together</h3>
-                <p>
-                  Look at how the build works, discuss what needs refining, and
-                  agree on the next steps.
-                </p>
-              </li>
-            </ol>
+          <div className="shell">
+            <div className="section-heading work-header">
+              <h2 id="work-heading">
+                Ideas, <span>in practice.</span>
+              </h2>
+              <p>
+                A closer look at personal and hackathon builds. Real interfaces,
+                source-backed systems, and the thinking behind them.
+              </p>
+            </div>
+            <SelectedWork />
           </div>
         </section>
+        <AboutProcess />
         <section
           id="contact"
-          className="contact"
+          className="contact section-space"
           aria-labelledby="contact-heading"
         >
-          <h2 id="contact-heading">
-            What would you
-            <br />
-            like to build?
-          </h2>
-          <div className="contact-body">
-            <p>
-              A website, an app, or something that connects software and
-              hardware. Tell me about your idea.
-            </p>
-            <a className="contact-email" href={`mailto:${contact.email}`}>
-              Email Hans <Arrow />
-            </a>
-            <p className="email-address">{contact.email}</p>
-            <CopyEmail />
-            <a className="text-link" href={contact.facebook}>
-              Contact Hans on Facebook <Arrow />
-            </a>
+          <div className="shell contact-grid">
+            <h2 id="contact-heading">
+              Have something
+              <br />
+              in mind?
+              <br />
+              <span>Let’s make it work.</span>
+            </h2>
+            <div className="contact-body">
+              <p>
+                A website, an app, or something that connects software and
+                hardware. Tell me about your idea.
+              </p>
+              <a className="contact-email" href={`mailto:${contact.email}`}>
+                Email Hans <Arrow />
+              </a>
+              <p className="email-address">{contact.email}</p>
+              <CopyEmail />
+              <a className="text-link" href={contact.facebook}>
+                Contact Hans on Facebook <Arrow />
+              </a>
+            </div>
           </div>
         </section>
       </main>
       <footer className="shell">
-        <span>Hans Santos.</span>
-        <span>Batangas, Philippines</span>
+        <span className="footer-brand">Hans Santos.</span>
+        <span>
+          Independent developer &amp; maker
+          <br />
+          Batangas, Philippines
+        </span>
         <a href="#intro">
           Back to top <Arrow />
         </a>

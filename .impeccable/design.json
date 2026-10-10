@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T15:40:52.832Z",
+  "generatedAt": "2026-10-10T22:27:52.089160Z",
   "title": "Design System: Hans Santos",
   "extensions": {
     "colorMeta": {
       "canvas": {
         "role": "neutral",
-        "displayName": "Warm Paper",
+        "displayName": "Warm Ivory",
         "tonalRamp": [
           "oklch(15.00% 0.00823 91.48)",
           "oklch(26.43% 0.00823 91.48)",
@@ -20,16 +20,16 @@
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Near Black",
+        "displayName": "Charcoal",
         "tonalRamp": [
-          "oklch(15.00% 0.00000 89.88)",
-          "oklch(26.43% 0.00000 89.88)",
-          "oklch(37.86% 0.00000 89.88)",
-          "oklch(49.29% 0.00000 89.88)",
-          "oklch(60.71% 0.00000 89.88)",
-          "oklch(72.14% 0.00000 89.88)",
-          "oklch(83.57% 0.00000 89.88)",
-          "oklch(95.00% 0.00000 89.88)"
+          "oklch(15.00% 0.02240 269.03)",
+          "oklch(26.43% 0.02240 269.03)",
+          "oklch(37.86% 0.02240 269.03)",
+          "oklch(49.29% 0.02240 269.03)",
+          "oklch(60.71% 0.02240 269.03)",
+          "oklch(72.14% 0.02240 269.03)",
+          "oklch(83.57% 0.02240 269.03)",
+          "oklch(95.00% 0.02240 269.03)"
         ]
       },
       "accent": {
@@ -46,127 +46,215 @@
           "oklch(95.00% 0.24263 264.82)"
         ]
       },
+      "soft-blue": {
+        "role": "secondary",
+        "displayName": "Soft Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.05393 256.40)",
+          "oklch(26.43% 0.05393 256.40)",
+          "oklch(37.86% 0.05393 256.40)",
+          "oklch(49.29% 0.05393 256.40)",
+          "oklch(60.71% 0.05393 256.40)",
+          "oklch(72.14% 0.05393 256.40)",
+          "oklch(83.57% 0.05393 256.40)",
+          "oklch(95.00% 0.05393 256.40)"
+        ]
+      },
       "muted": {
         "role": "neutral",
-        "displayName": "Quiet Gray",
+        "displayName": "Slate Copy",
         "tonalRamp": [
-          "oklch(15.00% 0.00000 89.88)",
-          "oklch(26.43% 0.00000 89.88)",
-          "oklch(37.86% 0.00000 89.88)",
-          "oklch(49.29% 0.00000 89.88)",
-          "oklch(60.71% 0.00000 89.88)",
-          "oklch(72.14% 0.00000 89.88)",
-          "oklch(83.57% 0.00000 89.88)",
-          "oklch(95.00% 0.00000 89.88)"
+          "oklch(15.00% 0.02945 263.17)",
+          "oklch(26.43% 0.02945 263.17)",
+          "oklch(37.86% 0.02945 263.17)",
+          "oklch(49.29% 0.02945 263.17)",
+          "oklch(60.71% 0.02945 263.17)",
+          "oklch(72.14% 0.02945 263.17)",
+          "oklch(83.57% 0.02945 263.17)",
+          "oklch(95.00% 0.02945 263.17)"
         ]
       },
       "rule": {
         "role": "neutral",
         "displayName": "Paper Rule",
         "tonalRamp": [
-          "oklch(15.00% 0.01394 93.00)",
-          "oklch(26.43% 0.01394 93.00)",
-          "oklch(37.86% 0.01394 93.00)",
-          "oklch(49.29% 0.01394 93.00)",
-          "oklch(60.71% 0.01394 93.00)",
-          "oklch(72.14% 0.01394 93.00)",
-          "oklch(83.57% 0.01394 93.00)",
-          "oklch(95.00% 0.01394 93.00)"
+          "oklch(15.00% 0.00552 117.94)",
+          "oklch(26.43% 0.00552 117.94)",
+          "oklch(37.86% 0.00552 117.94)",
+          "oklch(49.29% 0.00552 117.94)",
+          "oklch(60.71% 0.00552 117.94)",
+          "oklch(72.14% 0.00552 117.94)",
+          "oklch(83.57% 0.00552 117.94)",
+          "oklch(95.00% 0.00552 117.94)"
         ]
       },
-      "secondary-surface": {
+      "inset": {
         "role": "neutral",
-        "displayName": "Inset Paper",
+        "displayName": "Inset Ivory",
         "tonalRamp": [
-          "oklch(15.00% 0.01113 89.72)",
-          "oklch(26.43% 0.01113 89.72)",
-          "oklch(37.86% 0.01113 89.72)",
-          "oklch(49.29% 0.01113 89.72)",
-          "oklch(60.71% 0.01113 89.72)",
-          "oklch(72.14% 0.01113 89.72)",
-          "oklch(83.57% 0.01113 89.72)",
-          "oklch(95.00% 0.01113 89.72)"
+          "oklch(15.00% 0.00797 106.55)",
+          "oklch(26.43% 0.00797 106.55)",
+          "oklch(37.86% 0.00797 106.55)",
+          "oklch(49.29% 0.00797 106.55)",
+          "oklch(60.71% 0.00797 106.55)",
+          "oklch(72.14% 0.00797 106.55)",
+          "oklch(83.57% 0.00797 106.55)",
+          "oklch(95.00% 0.00797 106.55)"
         ]
       },
-      "control-text": {
+      "dark-rule": {
         "role": "neutral",
-        "displayName": "Control White",
+        "displayName": "Dark Rule",
         "tonalRamp": [
-          "oklch(15.00% 0.00000 89.88)",
-          "oklch(26.43% 0.00000 89.88)",
-          "oklch(37.86% 0.00000 89.88)",
-          "oklch(49.29% 0.00000 89.88)",
-          "oklch(60.71% 0.00000 89.88)",
-          "oklch(72.14% 0.00000 89.88)",
-          "oklch(83.57% 0.00000 89.88)",
-          "oklch(95.00% 0.00000 89.88)"
+          "oklch(15.00% 0.03412 263.17)",
+          "oklch(26.43% 0.03412 263.17)",
+          "oklch(37.86% 0.03412 263.17)",
+          "oklch(49.29% 0.03412 263.17)",
+          "oklch(60.71% 0.03412 263.17)",
+          "oklch(72.14% 0.03412 263.17)",
+          "oklch(83.57% 0.03412 263.17)",
+          "oklch(95.00% 0.03412 263.17)"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark Supporting Copy",
+        "tonalRamp": [
+          "oklch(15.00% 0.02212 259.19)",
+          "oklch(26.43% 0.02212 259.19)",
+          "oklch(37.86% 0.02212 259.19)",
+          "oklch(49.29% 0.02212 259.19)",
+          "oklch(60.71% 0.02212 259.19)",
+          "oklch(72.14% 0.02212 259.19)",
+          "oklch(83.57% 0.02212 259.19)",
+          "oklch(95.00% 0.02212 259.19)"
+        ]
+      },
+      "map-line": {
+        "role": "neutral",
+        "displayName": "Connection Slate",
+        "tonalRamp": [
+          "oklch(15.00% 0.04434 256.64)",
+          "oklch(26.43% 0.04434 256.64)",
+          "oklch(37.86% 0.04434 256.64)",
+          "oklch(49.29% 0.04434 256.64)",
+          "oklch(60.71% 0.04434 256.64)",
+          "oklch(72.14% 0.04434 256.64)",
+          "oklch(83.57% 0.04434 256.64)",
+          "oklch(95.00% 0.04434 256.64)"
+        ]
+      },
+      "map-active": {
+        "role": "secondary",
+        "displayName": "Active Connection Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.08509 266.17)",
+          "oklch(26.43% 0.08509 266.17)",
+          "oklch(37.86% 0.08509 266.17)",
+          "oklch(49.29% 0.08509 266.17)",
+          "oklch(60.71% 0.08509 266.17)",
+          "oklch(72.14% 0.08509 266.17)",
+          "oklch(83.57% 0.08509 266.17)",
+          "oklch(95.00% 0.08509 266.17)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Largest expressive heading with fixed optical-size and width axes."
+        "purpose": "Opening headline with measured optical and width axes."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section heading."
+        "purpose": "Section headings."
       },
-      "title": {
-        "displayName": "Title",
-        "purpose": "Regular-weight project heading."
+      "project-title": {
+        "displayName": "Project Title",
+        "purpose": "Personal and hackathon project headings."
       },
       "service-title": {
         "displayName": "Service Title",
-        "purpose": "Bold Arial service name."
+        "purpose": "Large service headings."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Standard explanatory text."
+        "purpose": "Inherited explanatory copy; user-controlled root font size."
       },
-      "label": {
-        "displayName": "Label",
-        "purpose": "Navigation and primary-action label."
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Introduction beside the assembly map."
+      },
+      "project-summary": {
+        "displayName": "Project Summary",
+        "purpose": "Prominent project summary."
+      },
+      "personal-context": {
+        "displayName": "Personal Context",
+        "purpose": "Personal introduction."
+      },
+      "process-title": {
+        "displayName": "Process Title",
+        "purpose": "Process-step headings."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Visible compact navigation."
       },
       "caption": {
         "displayName": "Caption",
-        "purpose": "Media captions and availability notes."
+        "purpose": "Media provenance and illustrative notes."
+      },
+      "contact": {
+        "displayName": "Contact",
+        "purpose": "Large closing invitation."
+      },
+      "contact-link": {
+        "displayName": "Contact Link",
+        "purpose": "Email action."
+      },
+      "mobile-display": {
+        "displayName": "Mobile Display",
+        "purpose": "Opening headline at max-width 43.75rem."
+      },
+      "mobile-headline": {
+        "displayName": "Mobile Headline",
+        "purpose": "Section headings at max-width 43.75rem."
+      },
+      "mobile-contact": {
+        "displayName": "Mobile Contact",
+        "purpose": "Closing invitation at max-width 43.75rem."
       }
     },
     "shadows": [],
     "motion": [
       {
         "name": "duration-feedback",
-        "value": "180ms",
-        "purpose": "Arrow hover transition when motion is permitted."
+        "value": "240ms",
+        "purpose": "Color/border transitions and arrow/navigation feedback when motion is permitted."
       },
       {
-        "name": "ease-feedback",
+        "name": "duration-settle",
+        "value": "700ms",
+        "purpose": "Finite headline settle and selected connection-path draw."
+      },
+      {
+        "name": "ease-settle",
         "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Brief arrow movement settles quickly."
-      },
-      {
-        "name": "duration-reduced",
-        "value": "0ms",
-        "purpose": "Reduced motion uses immediate states; smooth scrolling becomes automatic."
+        "purpose": "Source easing for headline, map-path, arrow, and navigation movement."
       }
     ],
     "breakpoints": [
       {
+        "name": "wide-max",
+        "value": "75rem"
+      },
+      {
+        "name": "stacked-max",
+        "value": "56.25rem"
+      },
+      {
         "name": "mobile-max",
-        "value": "700px"
-      },
-      {
-        "name": "diagram-compact-max",
-        "value": "1000px"
-      },
-      {
-        "name": "intermediate-max",
-        "value": "1100px"
-      },
-      {
-        "name": "desktop-min",
-        "value": "1101px"
+        "value": "43.75rem"
       }
     ]
   },
@@ -175,90 +263,116 @@
       "name": "Primary Action",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Filled contact link with a compact SVG arrow.",
-      "html": "<a class=\"ds-primary\" href=\"#contact\">Let’s talk about your project <svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></a>",
-      "css": ".ds-primary { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; background: var(--accent, #1847e6); color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 1.125rem; line-height: 1.5; padding: 1rem 1.25rem; min-height: 3.75rem; width: 21.25rem; max-width: 100%; border-radius: 0; text-decoration: none; text-underline-offset: 0.25em; } .ds-arrow { flex-shrink: 0; width: 1.2rem; height: 1.2rem; } .ds-primary:hover { text-decoration: underline; } .ds-primary:focus-visible { outline: 3px solid var(--accent, #1847e6); outline-offset: 5px; } @media (prefers-reduced-motion: no-preference) { .ds-primary .ds-arrow { transition: transform var(--motion-duration, 180ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-primary:hover .ds-arrow { transform: translate(2px, -2px); } }"
+      "description": "Native project-inquiry anchor with charcoal hover and focus.",
+      "html": "<div class=\"ds-preview\"><a class=\"ds-primary-link\" href=\"#contact\">Let’s talk about your project <svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></a></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview .ds-arrow {width: 1.2rem; height: 1.2rem; flex-shrink: 0;} .ds-preview .ds-primary-link {display: inline-flex; justify-content: space-between; align-items: center; gap: 1.5rem; background: var(--accent, #1847e6); color: var(--canvas, #f7f5ef); padding: 1rem 1.25rem; min-height: 3.75rem; max-width: 100%;} .ds-preview .ds-primary-link:hover {background: var(--ink, #171b26); text-decoration: none;} .ds-preview .ds-primary-link:focus-visible {outline-color: var(--ink, #171b26);} @media (prefers-reduced-motion: no-preference) {.ds-preview a .ds-arrow {transition: transform var(--motion-duration, 240ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1));} .ds-preview a:hover .ds-arrow {transform: translate(3px, -3px);} .ds-preview .ds-primary-link {transition: color var(--motion-duration, 240ms), background-color var(--motion-duration, 240ms), border-color var(--motion-duration, 240ms);}}"
     },
     {
       "name": "Text Action",
       "kind": "button",
       "refersTo": "link-text",
-      "description": "Open cobalt link for a secondary action.",
-      "html": "<a class=\"ds-text-link\" href=\"#work\">Explore the work <svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></a>",
-      "css": ".ds-text-link { display: inline-flex; align-items: center; gap: 0.9rem; color: var(--accent, #1847e6); font-family: Arial, Helvetica, sans-serif; font-size: 1.125rem; line-height: 1.5; min-height: 2.75rem; text-decoration: none; text-underline-offset: 0.25em; } .ds-arrow { flex-shrink: 0; width: 1.2rem; height: 1.2rem; } .ds-text-link:hover { text-decoration: underline; } .ds-text-link:focus-visible { outline: 3px solid var(--accent, #1847e6); outline-offset: 5px; } @media (prefers-reduced-motion: no-preference) { .ds-text-link .ds-arrow { transition: transform var(--motion-duration, 180ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-text-link:hover .ds-arrow { transform: translate(2px, -2px); } }"
+      "description": "Open cobalt link with native focus and inline SVG arrow.",
+      "html": "<div class=\"ds-preview\"><a class=\"ds-text-link\" href=\"#work\">Explore the work <svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></a></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview .ds-arrow {width: 1.2rem; height: 1.2rem; flex-shrink: 0;} .ds-preview .ds-text-link {display: inline-flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 2.75rem; color: var(--accent, #1847e6);} @media (prefers-reduced-motion: no-preference) {.ds-preview a .ds-arrow {transition: transform var(--motion-duration, 240ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1));} .ds-preview a:hover .ds-arrow {transform: translate(3px, -3px);}}"
     },
     {
       "name": "Main Navigation",
       "kind": "nav",
       "refersTo": "navigation",
-      "description": "Visible wrapping navigation with plain text links.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#services\">Services</a><a href=\"#work\">Work</a><a href=\"#contact\">Contact</a></nav>",
-      "css": ".ds-nav { display: flex; gap: 2.4rem; flex-wrap: wrap; font-family: Arial, Helvetica, sans-serif; font-size: 1.125rem; line-height: 1.5; } .ds-nav a { color: var(--ink, #1a1a1a); min-height: 2.75rem; display: inline-flex; align-items: center; text-decoration: none; text-underline-offset: 0.25em; } .ds-nav a:hover { text-decoration: underline; } .ds-nav a:focus-visible { outline: 3px solid var(--accent, #1847e6); outline-offset: 5px; } @media (max-width: 700px) { .ds-nav { gap: 1.5rem; width: 100%; } }"
+      "description": "Visible native links with current-section underline and minimum target sizing.",
+      "html": "<div class=\"ds-preview\"><nav aria-label=\"Main navigation\"><a href=\"#services\" aria-current=\"location\">Services</a><a href=\"#work\">Work</a><a href=\"#contact\">Contact</a></nav></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview nav {display: flex; gap: 2.5rem; flex-wrap: wrap; font-size: 0.9375rem;} .ds-preview nav a {min-width: 2.75rem; min-height: 2.75rem; display: inline-flex; align-items: center; position: relative;} .ds-preview nav a::after {content: \"\"; position: absolute; bottom: 0.25rem; left: 0; right: 0; height: 2px; background: var(--accent, #1847e6); transform: scaleX(0); transform-origin: left;} .ds-preview nav a[aria-current=\"location\"]::after, .ds-preview nav a:hover::after {transform: scaleX(1);} @media (prefers-reduced-motion: no-preference) {.ds-preview nav a::after {transition: transform var(--motion-duration, 240ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1));}} @media (max-width: 43.75rem) {.ds-preview nav {justify-content: space-between; gap: 0.5rem;} .ds-preview nav a {font-size: 0.875rem;}}"
     },
     {
-      "name": "Service Row",
+      "name": "Service Selection",
+      "kind": "button",
+      "refersTo": "service-selector",
+      "description": "Native pressed/unpressed styles; production controls enable after hydration.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-build-explorer\"><div class=\"ds-explorer-controls\" role=\"group\" aria-label=\"Explore a service\"><button type=\"button\" aria-pressed=\"true\">Web</button><button type=\"button\" aria-pressed=\"false\">Apps</button><button type=\"button\" aria-pressed=\"false\">Electronics</button><button type=\"button\" aria-pressed=\"false\">Embedded</button></div></div></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview .ds-build-explorer {background: var(--ink, #171b26); color: var(--canvas, #f7f5ef); padding: 1.25rem 1.75rem;} .ds-preview .ds-build-explorer :focus-visible {outline-color: var(--soft-blue, #a6bedf);} .ds-preview .ds-build-explorer ::selection {background: var(--canvas, #f7f5ef); color: var(--accent, #1847e6);} .ds-preview .ds-explorer-controls {display: flex; gap: 0.2rem; flex-wrap: wrap;} .ds-preview .ds-explorer-controls button {color: var(--dark-muted, #b7c0ce); background: transparent; border: 1px solid transparent; padding: 0.5rem 0.65rem; min-height: 2.75rem; font-size: 0.8125rem;} .ds-preview .ds-explorer-controls button[aria-pressed=\"true\"] {background: var(--accent, #1847e6); color: var(--canvas, #f7f5ef); border-color: var(--map-active, #adc6ff);} .ds-preview .ds-explorer-controls button:enabled:hover {border-color: var(--map-line, #667891); color: var(--canvas, #f7f5ef);} @media (prefers-reduced-motion: no-preference) {.ds-preview .ds-explorer-controls button {transition: color var(--motion-duration, 240ms), background-color var(--motion-duration, 240ms), border-color var(--motion-duration, 240ms);}} @media (max-width: 43.75rem) {.ds-preview .ds-build-explorer {padding: 1rem;} .ds-preview .ds-explorer-controls {justify-content: space-between; gap: 0;} .ds-preview .ds-explorer-controls button {padding: 0.5rem; font-size: 0.75rem;}}"
+    },
+    {
+      "name": "Copy Email Control",
+      "kind": "button",
+      "refersTo": "button-copy",
+      "description": "Outlined control on cobalt; production exposes hydration and clipboard status behavior.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-contact ds-copy-email\"><button type=\"button\">Copy email address <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M8 8H20V20H8zM4 16V4H16\"/></svg></button></div></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview .ds-contact :focus-visible {outline-color: var(--soft-blue, #a6bedf);} .ds-preview .ds-contact ::selection {background: var(--canvas, #f7f5ef); color: var(--accent, #1847e6);} .ds-preview .ds-contact {background: var(--accent, #1847e6); color: var(--canvas, #f7f5ef);} .ds-preview .ds-contact h2 {font-size: clamp(3rem, 5.4vw, 6.5rem);} .ds-preview .ds-contact h2 span {color: var(--canvas, #f7f5ef);} .ds-preview .ds-copy-email button {display: inline-flex; align-items: center; gap: 0.75rem; background: transparent; color: var(--canvas, #f7f5ef); border: 1px solid var(--soft-blue, #a6bedf); padding: 0.5rem 0.75rem; min-height: 2.75rem; font-size: 0.8125rem;} .ds-preview .ds-copy-email button:enabled:hover {background: var(--canvas, #f7f5ef); color: var(--accent, #1847e6);} .ds-preview .ds-copy-email svg {width: 1rem; height: 1rem;} .ds-preview .ds-copy-email [role=\"status\"] {display: block; min-height: 1.5em; font-size: 0.8125rem; margin-top: 0.5rem;} @media (prefers-reduced-motion: no-preference) {.ds-preview .ds-copy-email button {transition: color var(--motion-duration, 240ms), background-color var(--motion-duration, 240ms), border-color var(--motion-duration, 240ms);}} @media (max-width: 43.75rem) {.ds-preview .ds-contact h2 {font-size: clamp(2.75rem, 10vw, 4rem);}}"
+    },
+    {
+      "name": "Open Service Row",
       "kind": "custom",
       "refersTo": "service-row",
-      "description": "Open linked service row with ordinal, description, and fine divider.",
-      "html": "<a class=\"ds-service\" href=\"#contact\" aria-label=\"Discuss web development\"><span class=\"ds-number\" aria-hidden=\"true\">01</span><h3>Web development</h3><p>Clear, practical websites.</p><svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></a>",
-      "css": ".ds-service { display: grid; grid-template-columns: 3rem 34% 1fr 1.2rem; align-items: center; gap: 1rem; min-height: 5.15rem; border-bottom: 1px solid var(--rule, #d9d6cc); color: var(--ink, #1a1a1a); font-family: Arial, Helvetica, sans-serif; text-decoration: none; text-underline-offset: 0.25em; } .ds-service .ds-number { color: var(--muted, #606060); font-size: 1rem; font-variant-numeric: tabular-nums; } .ds-service h3 { margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 1.375rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; } .ds-service p { margin: 0; color: var(--muted, #606060); font-size: 1.125rem; line-height: 1.4; } .ds-service .ds-arrow { color: var(--accent, #1847e6); } .ds-arrow { flex-shrink: 0; width: 1.2rem; height: 1.2rem; } .ds-service:hover { text-decoration: underline; } .ds-service:focus-visible { outline: 3px solid var(--accent, #1847e6); outline-offset: 5px; } @media (prefers-reduced-motion: no-preference) { .ds-service .ds-arrow { transition: transform var(--motion-duration, 180ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-service:hover .ds-arrow { transform: translate(2px, -2px); } } @media (max-width: 1100px) { .ds-service { grid-template-columns: 2rem 1fr 1.2rem; padding-block: 1rem; } .ds-service p { grid-column: 2; grid-row: 2; } .ds-service .ds-arrow { grid-column: 3; grid-row: 1; } } @media (max-width: 700px) { .ds-service { min-height: 6rem; grid-template-columns: 2rem minmax(0, 1fr) 1.2rem; } .ds-service h3 { font-size: 1.25rem; } .ds-service p { font-size: 1rem; } }"
+      "description": "Numbered whole-row link with fine rule and circular action.",
+      "html": "<div class=\"ds-preview\"><ol class=\"ds-service-list\"><li><a href=\"#contact\"><span class=\"ds-service-number\" aria-hidden=\"true\">01</span><div class=\"ds-service-title\"><h3>Web development</h3><span>Websites / Web interfaces</span></div><p>Professional websites and web interfaces shaped around your business, your audience, and what they need to do.</p><span class=\"ds-service-action\" aria-hidden=\"true\"><svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></span></a></li></ol></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview h3, .ds-preview p {margin: 0; overflow-wrap: anywhere;} .ds-preview h3 {font-family: var(--font-studio, \"Bricolage Grotesque\"), Arial, sans-serif;} .ds-preview .ds-arrow {width: 1.2rem; height: 1.2rem; flex-shrink: 0;} .ds-preview .ds-service-list {list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule, #d6d7d3);} .ds-preview .ds-service-list a {display: grid; grid-template-columns: 0.14fr 0.8fr 0.65fr 3rem; align-items: center; gap: 1.5rem; padding-block: 2rem; border-bottom: 1px solid var(--rule, #d6d7d3);} .ds-preview .ds-service-number {font-family: var(--font-studio, \"Bricolage Grotesque\"), Arial, sans-serif; color: var(--accent, #1847e6); font-size: clamp(2.5rem, 4vw, 4.5rem); font-weight: 400; line-height: 1; font-variant-numeric: tabular-nums;} .ds-preview .ds-service-title h3 {font-size: clamp(1.75rem, 2.7vw, 3.2rem); font-weight: 550; line-height: 1.12; letter-spacing: -0.025em;} .ds-preview .ds-service-title > span {display: block; font-size: 0.75rem; color: var(--muted, #596273); margin-top: 0.6rem;} .ds-preview .ds-service-list p {color: var(--muted, #596273); max-width: 43ch;} .ds-preview .ds-service-action {display: grid; place-items: center; width: 3rem; height: 3rem; border: 1px solid var(--rule, #d6d7d3); border-radius: 50%; color: var(--accent, #1847e6);} .ds-preview .ds-service-list a:hover {text-decoration: none;} .ds-preview .ds-service-list a:hover h3 {color: var(--accent, #1847e6);} .ds-preview .ds-service-list a:hover .ds-service-action {background: var(--accent, #1847e6); color: var(--canvas, #f7f5ef); border-color: var(--accent, #1847e6);} @media (prefers-reduced-motion: no-preference) {.ds-preview a .ds-arrow {transition: transform var(--motion-duration, 240ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1));} .ds-preview a:hover .ds-arrow {transform: translate(3px, -3px);} .ds-preview .ds-service-action, .ds-preview .ds-service-title h3 {transition: color var(--motion-duration, 240ms), background-color var(--motion-duration, 240ms), border-color var(--motion-duration, 240ms);}} @media (max-width: 56.25rem) {.ds-preview .ds-service-list a {grid-template-columns: 3rem 1fr 3rem; gap: 1rem 1.5rem;} .ds-preview .ds-service-number {grid-row: span 2; align-self: start;} .ds-preview .ds-service-list p {grid-column: 2; max-width: 55ch;} .ds-preview .ds-service-action {grid-column: 3; grid-row: 1 / span 2;}} @media (max-width: 43.75rem) {.ds-preview .ds-service-list a {grid-template-columns: 2rem 1fr 2.75rem; gap: 0.75rem; padding-block: 1.5rem;} .ds-preview .ds-service-number {font-size: 1.75rem; padding-top: 0.2rem;} .ds-preview .ds-service-title h3 {font-size: 1.75rem;} .ds-preview .ds-service-action {width: 2.75rem; height: 2.75rem;} .ds-preview .ds-service-title > span {line-height: 1.7;} .ds-preview .ds-service-list p {font-size: 0.9375rem;}}"
     },
     {
-      "name": "Evidence Fallback Panel",
-      "kind": "card",
-      "refersTo": "evidence-panel",
-      "description": "Readable fallback inside an image backing surface.",
-      "html": "<div class=\"ds-evidence\"><p>The project image couldn’t load. You can still read about the build and explore its source below.</p></div>",
-      "css": ".ds-evidence { background: #f0ede5; display: grid; place-items: center; overflow: hidden; border-radius: 0; } .ds-evidence p { margin: 0; padding: 2rem; max-width: 60ch; color: var(--muted, #606060); font-family: Arial, Helvetica, sans-serif; font-size: 1rem; line-height: 1.5; }"
-    },
-    {
-      "name": "Illustrative Diagram Node",
+      "name": "Hardware Diagram Node",
       "kind": "custom",
       "refersTo": "diagram-node",
-      "description": "Square outlined factual component node from the hardware diagram.",
-      "html": "<div class=\"ds-node\"><strong>Fingerprint sensor</strong><span>Recognise or enroll</span></div>",
-      "css": ".ds-node { border: 1px solid var(--muted, #606060); padding: 1.5rem; position: relative; background: #f0ede5; color: var(--ink, #1a1a1a); border-radius: 0; font-family: Arial, Helvetica, sans-serif; font-size: 1rem; line-height: 1.5; } .ds-node strong { display: block; font-size: 1.125rem; font-weight: 700; } .ds-node span { display: block; color: var(--muted, #606060); margin-top: 0.5rem; } @media (min-width: 701px) and (max-width: 1000px) { .ds-node { padding: 1rem; } }"
+      "description": "Square factual node within the visibly labeled hardware diagram.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-drawer-diagram\"><p class=\"ds-diagram-label\">Illustrative diagram</p><ol class=\"ds-diagram-flow\"><li><strong>Fingerprint sensor</strong><span>Recognise or enroll</span></li></ol></div></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview p {margin: 0; overflow-wrap: anywhere;} .ds-preview .ds-drawer-diagram {padding: clamp(1.25rem, 2.5vw, 3rem); background: var(--canvas, #f7f5ef); color: var(--ink, #171b26);} .ds-preview .ds-diagram-label {color: var(--accent, #1847e6); font-size: 0.8125rem; margin-bottom: 2rem;} .ds-preview .ds-diagram-flow {list-style: none; display: flex; margin: 0; padding: 0; gap: 1.5rem;} .ds-preview .ds-diagram-flow li {border: 1px solid var(--accent, #1847e6); padding: 1rem; flex: 1; position: relative;} .ds-preview .ds-diagram-flow li:not(:last-child)::after {content: \"\"; position: absolute; top: 50%; width: 1.5rem; left: 100%; border-top: 1px solid var(--accent, #1847e6);} .ds-preview .ds-diagram-flow strong {display: block; font-size: 1rem;} .ds-preview .ds-diagram-flow span {display: block; color: var(--muted, #596273); font-size: 0.8125rem; margin-top: 0.5rem;} @media (max-width: 75rem) {.ds-preview .ds-diagram-flow {flex-direction: column;} .ds-preview .ds-diagram-flow li:not(:last-child)::after {top: 100%; left: 50%; width: 0; height: 1.5rem; border-top: 0; border-left: 1px solid var(--accent, #1847e6);}} @media (max-width: 56.25rem) {.ds-preview .ds-diagram-flow {flex-direction: row;} .ds-preview .ds-diagram-flow li:not(:last-child)::after {top: 50%; left: 100%; width: 1.5rem; height: 0; border-left: 0; border-top: 1px solid var(--accent, #1847e6);}} @media (max-width: 43.75rem) {.ds-preview .ds-diagram-flow {flex-direction: column;} .ds-preview .ds-diagram-flow li:not(:last-child)::after {top: 100%; left: 50%; width: 0; height: 1.5rem; border-top: 0; border-left: 1px solid var(--accent, #1847e6);} .ds-preview .ds-diagram-label {margin-bottom: 1.5rem;}}"
+    },
+    {
+      "name": "Evidence Fallback",
+      "kind": "card",
+      "refersTo": "evidence-panel",
+      "description": "Readable fallback within the inset image backing.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-project-image\"><div class=\"ds-media-fallback\"><p>The project image couldn’t load. You can still read about the build and explore its source below.</p></div></div></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview p {margin: 0; overflow-wrap: anywhere;} .ds-preview .ds-project-image {background: var(--inset, #eeeee8); display: grid; place-items: center; overflow: hidden;} .ds-preview .ds-project-image img {display: block; width: 100%; height: auto;} .ds-preview .ds-media-fallback {padding: 2rem; color: var(--muted, #596273);}"
+    },
+    {
+      "name": "Assembly Map Detail",
+      "kind": "custom",
+      "refersTo": "assembly-map",
+      "description": "Selected-detail geometry used on narrow screens; desktop retains the full network.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-build-explorer\"><svg class=\"ds-mobile-system-map\" viewBox=\"0 0 360 185\" fill=\"none\" aria-label=\"Illustrative Web capability connected to the studio monogram\" role=\"img\"><path d=\"M162 91H243\" pathLength=\"1\" class=\"ds-map-path ds-is-selected\"/><g transform=\"translate(24, 45)\" class=\"ds-map-node ds-is-selected\"><rect width=\"138\" height=\"92\"/><path d=\"M0 19H138M12 10H15M22 10H25M32 10H35M15 35H67M15 47H50M15 72H84\"/><rect x=\"83\" y=\"33\" width=\"39\" height=\"39\"/><text x=\"69\" y=\"-16\" text-anchor=\"middle\">WEB</text></g><circle class=\"ds-map-guides\" cx=\"285\" cy=\"91\" r=\"51\" stroke=\"currentColor\" stroke-dasharray=\"2 7\"/><g class=\"ds-map-hub\"><circle cx=\"285\" cy=\"91\" r=\"36\"/><path d=\"M265 71V111M305 71V111M265 91H305M275 111V96M295 71V86\"/></g></svg><p class=\"ds-sketch-note\">Illustrative service map · explore how the pieces connect</p></div></div>",
+      "css": ".ds-preview {font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink, #171b26); } .ds-preview a {color: inherit; text-decoration: none; text-underline-offset: 0.3em;} .ds-preview a:hover {text-decoration: underline;} .ds-preview button {font: inherit; cursor: pointer;} .ds-preview button:disabled {cursor: default;} .ds-preview :focus-visible {outline: 3px solid var(--accent, #1847e6); outline-offset: 5px;} .ds-preview p {margin: 0; overflow-wrap: anywhere;} .ds-preview .ds-build-explorer {background: var(--ink, #171b26); color: var(--canvas, #f7f5ef); padding: 1.25rem 1.75rem;} .ds-preview .ds-build-explorer :focus-visible {outline-color: var(--soft-blue, #a6bedf);} .ds-preview .ds-build-explorer ::selection {background: var(--canvas, #f7f5ef); color: var(--accent, #1847e6);} .ds-preview .ds-mobile-system-map {display: none;} .ds-preview .ds-map-guides {color: var(--map-line, #667891);} .ds-preview .ds-map-path {stroke: var(--map-line, #667891); stroke-width: 1.2;} .ds-preview .ds-map-path.ds-is-selected {stroke: var(--map-active, #adc6ff); stroke-width: 2.5;} .ds-preview .ds-map-node {stroke: var(--map-line, #667891); stroke-width: 1.2; color: var(--dark-muted, #b7c0ce);} .ds-preview .ds-map-node.ds-is-selected {stroke: var(--map-active, #adc6ff); color: var(--canvas, #f7f5ef);} .ds-preview .ds-map-node.ds-is-selected > rect:first-child {fill: var(--accent, #1847e6);} .ds-preview .ds-map-node text {fill: currentColor; stroke: none; font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif;} .ds-preview .ds-map-hub circle {fill: var(--canvas, #f7f5ef);} .ds-preview .ds-map-hub path {stroke: var(--ink, #171b26); stroke-width: 4;} .ds-preview .ds-sketch-note {font-size: 0.75rem; color: var(--dark-muted, #b7c0ce); margin-top: 0.75rem;} @media (prefers-reduced-motion: no-preference) {.ds-preview .ds-map-path.ds-is-selected {animation: connect-path 700ms var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1));} .ds-preview .ds-map-node > rect:first-child {transition: fill var(--motion-duration, 240ms);} @keyframes connect-path {\n    from {\n      stroke-dasharray: 1;\n      stroke-dashoffset: 1;\n    }\n    to {\n      stroke-dasharray: 1;\n      stroke-dashoffset: 0;\n    }\n  }} @media (max-width: 43.75rem) {.ds-preview .ds-build-explorer {padding: 1rem;} .ds-preview .ds-mobile-system-map {display: block; width: 100%; height: auto;}} .ds-preview .ds-mobile-system-map { display: block; width: 100%; height: auto; }"
     }
   ],
   "narrative": {
-    "northStar": "Editorial engineering studio",
-    "overview": "Warm paper, expressive sans-serif headings, and open space give Hans's portfolio a personal, clear, deliberate voice. Near-black text carries the information; cobalt gives actions and selected headline words a consistent emphasis.\n\nThe world is flat and precise. Rules organize information, rectangular controls feel direct, and authentic project evidence supplies visual complexity. Motion is brief feedback; content is visible before any interaction.",
+    "northStar": "Interfaces & instruments",
+    "overview": "A premium independent engineering studio connects expressive typography with precise assembly geometry. Warm ivory gives the reading space a human character; charcoal supplies a focused field for diagrams and authentic project evidence. Cobalt marks actions and emphasis, with soft blue supporting legibility on dark surfaces.\n\nThe system is spacious, flat, and deliberate. Large headings establish hierarchy, open numbered rows make information scannable, and rectangular media frames give real interfaces room to speak. The authored monogram connects the personal voice to the service map. Motion settles or confirms a state; readable content is present before animation or interaction.",
     "keyCharacteristics": [
-      "Warm paper surfaces with near-black text.",
-      "Bricolage Grotesque headings paired with Arial body text.",
-      "Cobalt actions, fine rules, and square geometry.",
-      "Open spacing, readable measures, and responsive stacking.",
-      "Authentic imagery and explicitly labeled illustrative diagrams."
+      "Warm ivory, charcoal, cobalt, and soft blue with thin contextual rules.",
+      "Self-hosted Bricolage Grotesque headings and readable Arial body copy.",
+      "Open numbered rows, broad media spreads, and rectangular controls.",
+      "An original assembly map with readable selected detail on narrow screens.",
+      "Finite motion, visible navigation, keyboard focus, and honest evidence labels."
     ],
     "rules": [
       {
-        "name": "The One Accent Rule",
-        "body": "Cobalt identifies emphasis and interaction; retain the warm neutral foundation when extending the system.",
+        "name": "The Contextual Contrast Rule",
+        "body": "Use ink and muted copy on ivory; use ivory and dark-muted copy on charcoal. Soft blue supports dark-surface emphasis and focus, while cobalt carries primary actions and the contact field.",
         "section": "colors"
       },
       {
         "name": "The Two Voices Rule",
-        "body": "Use Bricolage for expressive headings and Arial for explanatory copy and compact service names. Keep the display's measured variable-font settings when reusing that role.",
+        "body": "Use Bricolage for headings, ordinals, and identity; use Arial for explanations, navigation, and controls. Keep the display role’s measured optical-size and width settings.",
         "section": "typography"
       },
       {
-        "name": "The Flat Paper Rule",
-        "body": "Extend the paper-and-rule vocabulary without adding decorative shadows or floating panels.",
+        "name": "The Flat Surface Rule",
+        "body": "Create hierarchy through tonal fields, spacing, scale, and thin rules; do not add decorative shadows or floating card treatments.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do preserve the warm paper, near-black, and cobalt palette.",
-      "Do use locally hosted Bricolage for expressive headings and Arial for explanatory text.",
-      "Do retain square controls, fine rules, bounded text measures, and visible navigation at narrow widths.",
-      "Do show a cobalt keyboard outline and retain content when reduced motion is requested.",
-      "Do use authentic project imagery and label illustrative diagrams clearly."
+      "Do preserve the contextual palette and its readable light-on-dark pairings.",
+      "Do use the self-hosted Bricolage font for headings and Arial for explanatory copy.",
+      "Do retain generous spacing, bounded text measures, square surfaces, and visible navigation.",
+      "Do keep all four service controls available when the map becomes selected detail on mobile.",
+      "Do preserve visible keyboard focus and static content under reduced motion.",
+      "Do use authentic screenshots and clearly label illustrative diagrams."
     ],
     "donts": [
-      "Don't add decorative shadows, pill controls, or a competing orange or dark visual theme.",
-      "Don't substitute a system display face for the local Bricolage font.",
-      "Don't hide meaningful content behind animation or require motion for comprehension.",
-      "Don't invent project photography, customer evidence, credentials, or results."
+      "Don’t turn the open service rows and project spreads into a uniform card grid.",
+      "Don’t introduce decorative shadows or rounded panel treatments into this flat system.",
+      "Don’t use soft blue or dark-muted copy on ivory without checking its contrast in that context.",
+      "Don’t hide meaningful content behind animation or require motion to understand a selection.",
+      "Don’t treat the service map as project evidence or invent project photography, clients, credentials, or results."
     ]
   }
 }

@@ -3,157 +3,183 @@
 import { useState } from "react";
 import { services } from "@/content/portfolio";
 import { Arrow } from "./arrow";
+import { useClientReady } from "./use-client-ready";
 
 const views = [
   {
     label: "Web",
-    words: ["Your content", "Clear interface", "Website"],
     target: "#ledger-heading",
     action: "See a web project",
+    words: ["Content", "Interface", "Website"],
   },
   {
     label: "Apps",
-    words: ["Your workflow", "Useful tools", "Application"],
-    target: "#contact",
-    action: "Discuss an application",
+    target: "#cloak-heading",
+    action: "Explore Cloak",
+    words: ["Workflow", "Interaction", "Application"],
   },
   {
     label: "Electronics",
-    words: ["Input", "Circuit", "Output"],
     target: "#smart-drawer-heading",
     action: "Explore the drawer build",
+    words: ["Input", "Circuit", "Output"],
   },
   {
     label: "Embedded",
-    words: ["Sensor", "Firmware", "Hardware"],
     target: "#smart-drawer-heading",
     action: "Explore the firmware",
+    words: ["Sensor", "Firmware", "Response"],
   },
 ];
 
-function SystemSketch({ index }: { index: number }) {
-  const hardware = index > 1;
+// Service concepts, never presented as project evidence or a wiring guide.
+function CapabilityDrawing({ index }: { index: number }) {
   return (
-    <svg
-      viewBox="0 0 540 340"
-      fill="none"
-      aria-hidden="true"
-      className="system-sketch"
-    >
-      <g className="sketch-traces" stroke="currentColor" strokeWidth="1.5">
-        <path d="M30 110H90L125 145H185M30 230H90L125 195H185M355 145H415L450 110H510M355 195H415L450 230H510" />
-        <path d="M270 30V85M270 255V310" />
-        <circle cx="30" cy="110" r="5" />
-        <circle cx="30" cy="230" r="5" />
-        <circle cx="510" cy="110" r="5" />
-        <circle cx="510" cy="230" r="5" />
-        <circle cx="270" cy="30" r="5" />
-        <circle cx="270" cy="310" r="5" />
-      </g>
-      {hardware ? (
-        <g stroke="currentColor" strokeWidth="2">
-          <rect x="185" y="85" width="170" height="170" />
-          <rect
-            x="205"
-            y="105"
-            width="130"
-            height="130"
-            className="sketch-core"
-          />
-          {[215, 240, 265, 290, 315].map((x) => (
-            <path key={x} d={`M${x} 73V85M${x} 255V267`} />
-          ))}
-          {[115, 140, 165, 190, 215].map((y) => (
-            <path key={y} d={`M173 ${y}H185M355 ${y}H367`} />
-          ))}
-          <path
-            d={
-              index === 2
-                ? "M222 170H238L246 155L258 185L270 155L282 185L294 170H318"
-                : "M242 183L225 170L242 157M298 157L315 170L298 183M280 150L260 190"
-            }
-            strokeWidth="3"
-          />
-        </g>
-      ) : (
-        <g stroke="currentColor" strokeWidth="2">
-          <rect
-            x={index === 1 ? 207 : 145}
-            y="70"
-            width={index === 1 ? 126 : 250}
-            height="200"
-            rx={index === 1 ? 12 : 0}
-            className="sketch-core"
-          />
-          {index === 1 ? (
-            <path d="M250 86H290M250 253H290" />
-          ) : (
-            <>
-              <path d="M145 100H395" />
-              <circle cx="161" cy="85" r="2" />
-              <circle cx="173" cy="85" r="2" />
-              <circle cx="185" cy="85" r="2" />
-            </>
-          )}
-          <path
-            d={
-              index === 1
-                ? "M225 118H315M225 133H278M225 205H315M225 220H295"
-                : "M165 123H268M165 140H245M165 232H285"
-            }
-          />
-          <rect
-            x={index === 1 ? 225 : 165}
-            y="160"
-            width={index === 1 ? 90 : 105}
-            height="28"
-            fill="currentColor"
-            fillOpacity=".15"
-          />
-          {index === 0 && (
-            <>
-              <rect
-                x="292"
-                y="120"
-                width="82"
-                height="82"
-                fill="currentColor"
-                fillOpacity=".08"
-              />
-              <path d="M304 188L320 164L335 175L359 143" />
-            </>
-          )}
-        </g>
+    <>
+      <rect width="138" height="92" />
+      {index === 0 && (
+        <>
+          <path d="M0 19H138M12 10H15M22 10H25M32 10H35M15 35H67M15 47H50M15 72H84" />
+          <rect x="83" y="33" width="39" height="39" />
+        </>
       )}
-      <g fill="currentColor" className="sketch-packets">
-        <circle cx="100" cy="120" r="4" />
-        <circle cx="440" cy="220" r="4" />
-      </g>
-    </svg>
+      {index === 1 && (
+        <>
+          <path d="M18 20H68M18 32H48M18 47H120M18 72H72" />
+          <rect x="18" y="47" width="12" height="12" />
+          <path d="M40 53H108M98 69L106 77L120 63" />
+        </>
+      )}
+      {index === 2 && (
+        <>
+          <path d="M13 46H36L43 34L53 58L63 34L73 58L80 46H99M106 31V61M116 31V61M116 46H126" />
+          <circle cx="17" cy="14" r="3" />
+          <circle cx="122" cy="78" r="3" />
+        </>
+      )}
+      {index === 3 && (
+        <>
+          <rect x="48" y="25" width="42" height="42" />
+          <path d="M57 15V25M69 15V25M81 15V25M57 67V77M69 67V77M81 67V77M38 34H48M38 46H48M38 58H48M90 34H100M90 46H100M90 58H100M63 36L56 46L63 56M75 36L82 46L75 56" />
+        </>
+      )}
+    </>
+  );
+}
+
+function Hub({ x, y, radius = 46 }: { x: number; y: number; radius?: number }) {
+  return (
+    <g className="map-hub">
+      <circle cx={x} cy={y} r={radius} />
+      <path
+        d={`M${x - 20} ${y - 20}V${y + 20}M${x + 20} ${y - 20}V${y + 20}M${x - 20} ${y}H${x + 20}M${x - 10} ${y + 20}V${y + 5}M${x + 10} ${y - 20}V${y - 5}`}
+      />
+    </g>
+  );
+}
+
+function SystemMap({ selected }: { selected: number }) {
+  return (
+    <>
+      <svg
+        viewBox="0 0 760 310"
+        fill="none"
+        aria-hidden="true"
+        className="system-map"
+      >
+        <g className="map-guides" stroke="currentColor" strokeWidth="1">
+          <path d="M24 24H44M24 24V44M736 24H716M736 24V44M24 286H44M24 286V266M736 286H716M736 286V266" />
+          <circle cx="380" cy="150" r="73" strokeDasharray="2 9" />
+        </g>
+        {[
+          "M200 93H258L305 140H334",
+          "M560 93H502L455 140H426",
+          "M200 220H258L305 160H334",
+          "M560 220H502L455 160H426",
+        ].map((path, index) => (
+          <path
+            key={`${index}-${selected}`}
+            d={path}
+            pathLength="1"
+            className={`map-path ${selected === index ? "is-selected" : ""}`}
+          />
+        ))}
+        <Hub x={380} y={150} />
+        {views.map((view, index) => (
+          <g
+            key={view.label}
+            transform={`translate(${index % 2 ? 560 : 62}, ${index > 1 ? 174 : 45})`}
+            className={`map-node ${selected === index ? "is-selected" : ""}`}
+          >
+            <CapabilityDrawing index={index} />
+            <text x="69" y={index > 1 ? 113 : -16} textAnchor="middle">
+              {view.label.toUpperCase()}
+            </text>
+          </g>
+        ))}
+      </svg>
+      <svg
+        viewBox="0 0 360 185"
+        fill="none"
+        aria-hidden="true"
+        className="mobile-system-map"
+      >
+        <path
+          key={selected}
+          d="M162 91H243"
+          pathLength="1"
+          className="map-path is-selected"
+        />
+        <g transform="translate(24, 45)" className="map-node is-selected">
+          <CapabilityDrawing index={selected} />
+          <text x="69" y="-16" textAnchor="middle">
+            {views[selected].label.toUpperCase()}
+          </text>
+        </g>
+        <circle
+          className="map-guides"
+          cx="285"
+          cy="91"
+          r="51"
+          stroke="currentColor"
+          strokeDasharray="2 7"
+        />
+        <Hub x={285} y={91} radius={36} />
+      </svg>
+    </>
   );
 }
 
 export function BuildExplorer() {
+  const ready = useClientReady();
   const [selected, setSelected] = useState(0);
   const view = views[selected];
   return (
-    <div className="build-explorer" aria-label="Interactive service explorer">
-      <div
-        className="explorer-controls"
-        role="group"
-        aria-label="Explore a service"
-      >
-        {views.map((item, index) => (
-          <button
-            key={item.label}
-            type="button"
-            aria-pressed={selected === index}
-            aria-controls="explorer-view"
-            onClick={() => setSelected(index)}
-          >
-            {item.label}
-          </button>
-        ))}
+    <div
+      className="build-explorer"
+      role="group"
+      aria-label="Interactive service explorer"
+    >
+      <div className="explorer-toolbar">
+        <span className="explorer-name">Connected capabilities</span>
+        <div
+          className="explorer-controls"
+          role="group"
+          aria-label="Explore a service"
+        >
+          {views.map((item, index) => (
+            <button
+              key={item.label}
+              type="button"
+              disabled={!ready}
+              aria-pressed={selected === index}
+              aria-controls="explorer-view"
+              onClick={() => setSelected(index)}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
       </div>
       <div
         id="explorer-view"
@@ -161,23 +187,25 @@ export function BuildExplorer() {
         aria-live="polite"
         aria-atomic="true"
       >
-        <div className="sketch-stage" key={selected}>
-          <SystemSketch index={selected} />
-        </div>
-        <div className="sketch-flow" aria-hidden="true">
-          {view.words.map((word) => (
-            <span key={word}>{word}</span>
-          ))}
+        <div className="sketch-stage">
+          <SystemMap selected={selected} />
         </div>
         <div className="explorer-caption">
-          <p>{services[selected].description}</p>
+          <div>
+            <div className="sketch-flow" aria-hidden="true">
+              {view.words.map((word) => (
+                <span key={word}>{word}</span>
+              ))}
+            </div>
+            <p>{services[selected].description}</p>
+          </div>
           <a href={view.target}>
             {view.action} <Arrow />
           </a>
         </div>
       </div>
       <p className="sketch-note">
-        Illustrative service sketch · choose a discipline above
+        Illustrative service map · explore how the pieces connect
       </p>
     </div>
   );
