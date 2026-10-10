@@ -23,7 +23,7 @@ export function ProjectImage({ media }: { media: ImageMedia }) {
           width={media.width}
           height={media.height}
           alt={media.alt}
-          sizes="(max-width: 700px) 90vw, 91vw"
+          sizes="(max-width: 900px) 90vw, 56vw"
           onError={() => setFailed(true)}
         />
       )}

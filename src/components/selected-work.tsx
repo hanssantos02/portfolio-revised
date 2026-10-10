@@ -5,12 +5,15 @@ import { Arrow } from "./arrow";
 
 export function ProjectEntry({ project }: { project: Project }) {
   return (
-    <article className="project" aria-labelledby={`${project.id}-heading`}>
+    <article
+      className={`project project-${project.id}`}
+      aria-labelledby={`${project.id}-heading`}
+    >
       <ProjectMedia media={project.media} />
       <div className="project-info">
         <div>
-          <p className="project-kind">{project.kind}</p>
           <h3 id={`${project.id}-heading`}>{project.title}</h3>
+          <p className="project-kind">{project.kind}</p>
         </div>
         <div className="project-description">
           <p className="project-summary">{project.summary}</p>

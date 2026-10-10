@@ -2,27 +2,25 @@
 version: 1
 slug: "src-app-page-tsx"
 primary_target: "src/app/page.tsx"
-related_targets: ["src/app/globals.css","src/components/services.tsx"]
+related_targets: ["src/app/globals.css", "src/components/services.tsx", "src/components/build-explorer.tsx", "src/components/site-header.tsx"]
 ---
 
 # Home portfolio
 
-Mode: Persuade. Clients need to understand Hans's four services, inspect actual builds, and reach email or Facebook. The introduction, services, work, approach, and contact order is fixed by the canonical plan.
+Mode: Persuade. Clients understand four services, inspect real builds, and reach email or Facebook. The approved introduction, services, work, approach, and contact order is preserved.
 
 ## Direction contract
 
-THESIS: Editorial engineering studio. Monumental type introduces the maker; readable service rows explain the offer before authentic project proof.
+THESIS: Interactive editorial engineering studio. Expressive type and a hands-on cobalt service explorer introduce Hans's range, then authentic project evidence supports the offer.
 
-OWN-WORLD: Warm ivory, near-black, cobalt; open sections, simple rectangular contact control, bold sans-serif headings, and minimal surface decoration.
+OWN-WORLD: Warm ivory, near-black, cobalt; locally hosted Bricolage, square actions, thin rules, geometric system sketches, open service rows, alternating project compositions.
 
-STORY: Understand the offer, find relevant work, see what the source supports, and discuss a project. No fabricated customers, hardware photographs, or measured results.
+STORY: Choose a discipline, understand how the pieces connect, explore relevant evidence, and discuss a build. The sketches are illustrative concepts. Dedicated app proof is unavailable; Apps directs visitors to contact.
 
-FIRST VIEWPORT: Brand/navigation above a left two-line headline, explanatory copy and contact links at right. Four service rows sit to the right of a two-line services heading. The work heading begins below. Use the measured selected mockup at desktop; stack at mobile.
+FIRST VIEWPORT: Sticky brand/navigation. Headline and introductory explanation at left, cobalt explorer at right. The explorer has four native selection buttons, a system sketch, a description, and a relevant link. Mobile stacks the readable introduction before the explorer.
 
-SIGNATURE: Service rows connect directly to contact with a quiet arrow and visible focus. Large real project captures below carry the detail.
+SIGNATURE: Browser, application, circuit, and firmware sketches connect input to interface or hardware. A selection changes the diagram and the relevant client action. This expresses Hans's software/hardware range without inventing a completed project.
 
-MOTION: Brief color feedback and a small arrow shift only when motion is permitted; text visible by default, reduced motion uses immediate states.
+MOTION: One bounded diagram sequence on load/selection, plus fast control feedback. No continuous background motion. Reduced motion uses immediate, static sketches. Text is visible independently of animation.
 
-Seed key: 87fbee1e. Hans's pinned option 1 overrides unrelated seeded directions. Mockup choice was delegated through explicit autonomous LFG: composition C, selected for clear service comparison and client-readable hierarchy, after all three compositions were displayed.
-
-Approved comp: `.impeccable/mocks/composition-c.png`. Prompt/provenance/approval: `.impeccable/mocks/composition-c.png.json`. Artwork/UI text in a mockup is a target, not evidence of a client or project. The genuine defect of insufficient contrast in the gray ordinals will be corrected in semantic code.
+AUTHORITY: On 11 October 2026 Hans explicitly requested a more interactive, modern site inspired by https://benscott.dev/#about while approving the existing structure. This amplifies the original editorial identity and supersedes the initial quiet-motion limitation. No styling gate is reopened. Composition C remains historical evidence for the first release, not the layout target for this refinement.

@@ -17,6 +17,7 @@ execution: code
 - **Means:** An original, services-first portfolio using Next.js and Tailwind.
 - **Product authority:** The Product Contract below records the scope approved by Hans on 2026-10-10. Supporting content evidence is in `docs/portfolio-content.md`; skill applicability is in `docs/ce-workflow.md`.
 - **Styling approval:** Hans explicitly selected option 1, Editorial engineering studio, on 2026-10-10. R1 is resolved.
+- **Refinement authority (2026-10-11):** Hans approved the existing structure and requested a more interactive, modern presentation inspired by Ben Scott's portfolio. Preserve the editorial palette, truthful evidence, services-first order, and R2–R12. Amplify the visual hierarchy and interactions; this request supersedes the initial quiet-motion limit and composition C as the final layout target. R1 remains resolved.
 - **Execution authority:** Hans invoked `lfg` and then approved styling; continue planning, implementation, verification, and PR delivery through that pipeline.
 - **Execution profile:** Complete the user-selected visual mockup before production UI, then implement units in dependency order. The Product Contract governs behavior; the Planning Contract governs mechanisms.
 - **Stop conditions:** Surface evidence that a required or session-settled decision cannot work. Routine implementation details and unavailable project media use the documented defaults.

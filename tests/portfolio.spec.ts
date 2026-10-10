@@ -125,19 +125,9 @@ for (const width of [360, 701, 900, 1100, 1101, 1280, 1440]) {
         () => document.documentElement.scrollWidth <= window.innerWidth,
       ),
     ).toBe(true);
-    if (width > 700) {
-      const copyLeft = await page
-        .locator(".intro-support")
-        .evaluate((node) => node.getBoundingClientRect().left);
-      const headlineRight = await page.locator("h1").evaluate((node) => {
-        const range = document.createRange();
-        range.selectNodeContents(node);
-        return Math.max(
-          ...Array.from(range.getClientRects(), (rect) => rect.right),
-        );
-      });
-      expect(headlineRight).toBeLessThanOrEqual(copyLeft + 1);
-    }
+    const headline = await page.locator("h1").boundingBox();
+    const support = await page.locator(".intro-support").boundingBox();
+    expect(headline!.y + headline!.height).toBeLessThanOrEqual(support!.y);
     const contact = page.locator('#contact a[href="' + email + '"]');
     await expect(contact).toBeVisible();
     const contactBox = await contact.boundingBox();

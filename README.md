@@ -28,7 +28,7 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-The browser suite starts its own production server on port 3133. It checks section order, contact destinations, hash navigation, keyboard focus, JavaScript-free use, five viewport widths, enlarged text, reduced motion, failed images, and independent media/demo variants. If Chrome is already installed, use `PLAYWRIGHT_CHROMIUM_CHANNEL=chrome npm run test:browser` instead of downloading Chromium. This environment used that route after the browser download timed out.
+The browser suite starts its own production server on port 3133. It checks section order, contact destinations, hash navigation, keyboard focus, JavaScript-free use, five viewport widths, enlarged text, reduced motion, failed images, independent media/demo variants, the service explorer, clipboard success/failure, and section tracking. If Chrome is already installed, use `PLAYWRIGHT_CHROMIUM_CHANNEL=chrome npm run test:browser -- --workers=1` instead of downloading Chromium. This environment uses one Chrome worker to avoid browser contention.
 
 The locked baseline respects the environment's release-age and peer compatibility rules: Playwright 1.63.0, TypeScript 6.0.3, ESLint 9.39.5. `npm audit` currently reports five high findings from one unpatched `braces` advisory in the development lint dependency chain. These dependencies are not part of the deployed browser bundle; do not use a forced framework downgrade as an audit fix.
 
