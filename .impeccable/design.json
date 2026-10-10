@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T15:40:52.832Z",
+  "title": "Design System: Hans Santos",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00823 91.48)",
+          "oklch(26.43% 0.00823 91.48)",
+          "oklch(37.86% 0.00823 91.48)",
+          "oklch(49.29% 0.00823 91.48)",
+          "oklch(60.71% 0.00823 91.48)",
+          "oklch(72.14% 0.00823 91.48)",
+          "oklch(83.57% 0.00823 91.48)",
+          "oklch(95.00% 0.00823 91.48)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Near Black",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Cobalt",
+        "tonalRamp": [
+          "oklch(15.00% 0.24263 264.82)",
+          "oklch(26.43% 0.24263 264.82)",
+          "oklch(37.86% 0.24263 264.82)",
+          "oklch(49.29% 0.24263 264.82)",
+          "oklch(60.71% 0.24263 264.82)",
+          "oklch(72.14% 0.24263 264.82)",
+          "oklch(83.57% 0.24263 264.82)",
+          "oklch(95.00% 0.24263 264.82)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Quiet Gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Paper Rule",
+        "tonalRamp": [
+          "oklch(15.00% 0.01394 93.00)",
+          "oklch(26.43% 0.01394 93.00)",
+          "oklch(37.86% 0.01394 93.00)",
+          "oklch(49.29% 0.01394 93.00)",
+          "oklch(60.71% 0.01394 93.00)",
+          "oklch(72.14% 0.01394 93.00)",
+          "oklch(83.57% 0.01394 93.00)",
+          "oklch(95.00% 0.01394 93.00)"
+        ]
+      },
+      "secondary-surface": {
+        "role": "neutral",
+        "displayName": "Inset Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.01113 89.72)",
+          "oklch(26.43% 0.01113 89.72)",
+          "oklch(37.86% 0.01113 89.72)",
+          "oklch(49.29% 0.01113 89.72)",
+          "oklch(60.71% 0.01113 89.72)",
+          "oklch(72.14% 0.01113 89.72)",
+          "oklch(83.57% 0.01113 89.72)",
+          "oklch(95.00% 0.01113 89.72)"
+        ]
+      },
+      "control-text": {
+        "role": "neutral",
+        "displayName": "Control White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Largest expressive heading with fixed optical-size and width axes."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Regular-weight project heading."
+      },
+      "service-title": {
+        "displayName": "Service Title",
+        "purpose": "Bold Arial service name."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Standard explanatory text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation and primary-action label."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Media captions and availability notes."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "duration-feedback",
+        "value": "180ms",
+        "purpose": "Arrow hover transition when motion is permitted."
+      },
+      {
+        "name": "ease-feedback",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Brief arrow movement settles quickly."
+      },
+      {
+        "name": "duration-reduced",
+        "value": "0ms",
+        "purpose": "Reduced motion uses immediate states; smooth scrolling becomes automatic."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "700px"
+      },
+      {
+        "name": "diagram-compact-max",
+        "value": "1000px"
+      },
+      {
+        "name": "intermediate-max",
+        "value": "1100px"
+      },
+      {
+        "name": "desktop-min",
+        "value": "1101px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled contact link with a compact SVG arrow.",
+      "html": "<a class=\"ds-primary\" href=\"#contact\">Let’s talk about your project <svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></a>",
+      "css": ".ds-primary { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; background: var(--accent, #1847e6); color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 1.125rem; line-height: 1.5; padding: 1rem 1.25rem; min-height: 3.75rem; width: 21.25rem; max-width: 100%; border-radius: 0; text-decoration: none; text-underline-offset: 0.25em; } .ds-arrow { flex-shrink: 0; width: 1.2rem; height: 1.2rem; } .ds-primary:hover { text-decoration: underline; } .ds-primary:focus-visible { outline: 3px solid var(--accent, #1847e6); outline-offset: 5px; } @media (prefers-reduced-motion: no-preference) { .ds-primary .ds-arrow { transition: transform var(--motion-duration, 180ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-primary:hover .ds-arrow { transform: translate(2px, -2px); } }"
+    },
+    {
+      "name": "Text Action",
+      "kind": "button",
+      "refersTo": "link-text",
+      "description": "Open cobalt link for a secondary action.",
+      "html": "<a class=\"ds-text-link\" href=\"#work\">Explore the work <svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></a>",
+      "css": ".ds-text-link { display: inline-flex; align-items: center; gap: 0.9rem; color: var(--accent, #1847e6); font-family: Arial, Helvetica, sans-serif; font-size: 1.125rem; line-height: 1.5; min-height: 2.75rem; text-decoration: none; text-underline-offset: 0.25em; } .ds-arrow { flex-shrink: 0; width: 1.2rem; height: 1.2rem; } .ds-text-link:hover { text-decoration: underline; } .ds-text-link:focus-visible { outline: 3px solid var(--accent, #1847e6); outline-offset: 5px; } @media (prefers-reduced-motion: no-preference) { .ds-text-link .ds-arrow { transition: transform var(--motion-duration, 180ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-text-link:hover .ds-arrow { transform: translate(2px, -2px); } }"
+    },
+    {
+      "name": "Main Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Visible wrapping navigation with plain text links.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#services\">Services</a><a href=\"#work\">Work</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2.4rem; flex-wrap: wrap; font-family: Arial, Helvetica, sans-serif; font-size: 1.125rem; line-height: 1.5; } .ds-nav a { color: var(--ink, #1a1a1a); min-height: 2.75rem; display: inline-flex; align-items: center; text-decoration: none; text-underline-offset: 0.25em; } .ds-nav a:hover { text-decoration: underline; } .ds-nav a:focus-visible { outline: 3px solid var(--accent, #1847e6); outline-offset: 5px; } @media (max-width: 700px) { .ds-nav { gap: 1.5rem; width: 100%; } }"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Open linked service row with ordinal, description, and fine divider.",
+      "html": "<a class=\"ds-service\" href=\"#contact\" aria-label=\"Discuss web development\"><span class=\"ds-number\" aria-hidden=\"true\">01</span><h3>Web development</h3><p>Clear, practical websites.</p><svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></a>",
+      "css": ".ds-service { display: grid; grid-template-columns: 3rem 34% 1fr 1.2rem; align-items: center; gap: 1rem; min-height: 5.15rem; border-bottom: 1px solid var(--rule, #d9d6cc); color: var(--ink, #1a1a1a); font-family: Arial, Helvetica, sans-serif; text-decoration: none; text-underline-offset: 0.25em; } .ds-service .ds-number { color: var(--muted, #606060); font-size: 1rem; font-variant-numeric: tabular-nums; } .ds-service h3 { margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 1.375rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; } .ds-service p { margin: 0; color: var(--muted, #606060); font-size: 1.125rem; line-height: 1.4; } .ds-service .ds-arrow { color: var(--accent, #1847e6); } .ds-arrow { flex-shrink: 0; width: 1.2rem; height: 1.2rem; } .ds-service:hover { text-decoration: underline; } .ds-service:focus-visible { outline: 3px solid var(--accent, #1847e6); outline-offset: 5px; } @media (prefers-reduced-motion: no-preference) { .ds-service .ds-arrow { transition: transform var(--motion-duration, 180ms) var(--motion-ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-service:hover .ds-arrow { transform: translate(2px, -2px); } } @media (max-width: 1100px) { .ds-service { grid-template-columns: 2rem 1fr 1.2rem; padding-block: 1rem; } .ds-service p { grid-column: 2; grid-row: 2; } .ds-service .ds-arrow { grid-column: 3; grid-row: 1; } } @media (max-width: 700px) { .ds-service { min-height: 6rem; grid-template-columns: 2rem minmax(0, 1fr) 1.2rem; } .ds-service h3 { font-size: 1.25rem; } .ds-service p { font-size: 1rem; } }"
+    },
+    {
+      "name": "Evidence Fallback Panel",
+      "kind": "card",
+      "refersTo": "evidence-panel",
+      "description": "Readable fallback inside an image backing surface.",
+      "html": "<div class=\"ds-evidence\"><p>The project image couldn’t load. You can still read about the build and explore its source below.</p></div>",
+      "css": ".ds-evidence { background: #f0ede5; display: grid; place-items: center; overflow: hidden; border-radius: 0; } .ds-evidence p { margin: 0; padding: 2rem; max-width: 60ch; color: var(--muted, #606060); font-family: Arial, Helvetica, sans-serif; font-size: 1rem; line-height: 1.5; }"
+    },
+    {
+      "name": "Illustrative Diagram Node",
+      "kind": "custom",
+      "refersTo": "diagram-node",
+      "description": "Square outlined factual component node from the hardware diagram.",
+      "html": "<div class=\"ds-node\"><strong>Fingerprint sensor</strong><span>Recognise or enroll</span></div>",
+      "css": ".ds-node { border: 1px solid var(--muted, #606060); padding: 1.5rem; position: relative; background: #f0ede5; color: var(--ink, #1a1a1a); border-radius: 0; font-family: Arial, Helvetica, sans-serif; font-size: 1rem; line-height: 1.5; } .ds-node strong { display: block; font-size: 1.125rem; font-weight: 700; } .ds-node span { display: block; color: var(--muted, #606060); margin-top: 0.5rem; } @media (min-width: 701px) and (max-width: 1000px) { .ds-node { padding: 1rem; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Editorial engineering studio",
+    "overview": "Warm paper, expressive sans-serif headings, and open space give Hans's portfolio a personal, clear, deliberate voice. Near-black text carries the information; cobalt gives actions and selected headline words a consistent emphasis.\n\nThe world is flat and precise. Rules organize information, rectangular controls feel direct, and authentic project evidence supplies visual complexity. Motion is brief feedback; content is visible before any interaction.",
+    "keyCharacteristics": [
+      "Warm paper surfaces with near-black text.",
+      "Bricolage Grotesque headings paired with Arial body text.",
+      "Cobalt actions, fine rules, and square geometry.",
+      "Open spacing, readable measures, and responsive stacking.",
+      "Authentic imagery and explicitly labeled illustrative diagrams."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Cobalt identifies emphasis and interaction; retain the warm neutral foundation when extending the system.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Use Bricolage for expressive headings and Arial for explanatory copy and compact service names. Keep the display's measured variable-font settings when reusing that role.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Paper Rule",
+        "body": "Extend the paper-and-rule vocabulary without adding decorative shadows or floating panels.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the warm paper, near-black, and cobalt palette.",
+      "Do use locally hosted Bricolage for expressive headings and Arial for explanatory text.",
+      "Do retain square controls, fine rules, bounded text measures, and visible navigation at narrow widths.",
+      "Do show a cobalt keyboard outline and retain content when reduced motion is requested.",
+      "Do use authentic project imagery and label illustrative diagrams clearly."
+    ],
+    "donts": [
+      "Don't add decorative shadows, pill controls, or a competing orange or dark visual theme.",
+      "Don't substitute a system display face for the local Bricolage font.",
+      "Don't hide meaningful content behind animation or require motion for comprehension.",
+      "Don't invent project photography, customer evidence, credentials, or results."
+    ]
+  }
+}

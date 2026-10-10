@@ -29,7 +29,11 @@ Hans selected the editorial direction with strong project previews. The orange-a
 The accepted styling is recorded in the canonical plan and R1's Outstanding Question is resolved. PRODUCT.md and DESIGN.md carry design context; DESIGN.md begins as a seed and will describe actual implemented tokens after review.
 The candidate descriptions above are historical discussion evidence, not simultaneous build instructions.
 
-## Planning and Execution Sequence
+## Execution record
+
+R1 was resolved before planning and scaffolding. The current LFG run enriched the canonical plan, generated three editorial compositions, selected composition C under delegated autonomy, and implemented the services-first page. The hero and responsive comparison gates both scored 91%. Production checks cover navigation, exact contact destinations, all media variants, image failure, keyboard focus, no-JavaScript use, enlarged text, viewport widths, and reduced motion. Review and shipping outcomes are recorded in the PR and final handoff. No production deployment or recurring automation is part of this run.
+
+## Historical Planning and Execution Sequence
 
 1. Resume the requirements with the styling discussion governed by R1.
 2. Check the completed requirements with `ce-doc-review` when useful, then have `ce-plan` enrich the same plan after the blocker is resolved.
@@ -56,16 +60,16 @@ Forcing iOS tests, corpus retuning, external publication, or unrelated integrati
 | `ce-explain` | Conditional | Explain unfamiliar project behavior or source evidence that affects truthful case-study copy. |
 | `ce-setup` | Conditional before build | Inspect or configure CE project health when needed; avoid installing unrelated packs. |
 | `ce-worktree` | Conditional before build | Isolate implementation when the repository workflow calls for it; documentation approval is not a request to create one now. |
-| `ce-simplify-code` | Required by future lfg | Simplify settled implementation while preserving the approved visual identity and behavior. |
-| `ce-code-review` | Required by future lfg | Independently review code, regressions, accessibility behavior, and plan compliance. |
-| `ce-test-browser` | Required by future lfg | Verify desktop/mobile flows, contact targets, media fallbacks, focus behavior, and reduced motion. |
+| `ce-simplify-code` | Required by active lfg | Simplify settled implementation while preserving the approved visual identity and behavior. |
+| `ce-code-review` | Required by active lfg | Independently review code, regressions, accessibility behavior, and plan compliance. |
+| `ce-test-browser` | Required by active lfg | Verify desktop/mobile flows, contact targets, media fallbacks, focus behavior, and reduced motion. |
 | `ce-debug` | Conditional | Diagnose concrete failures found during implementation or verification. |
 | `ce-optimize` | Conditional | Improve a measured performance or usability bottleneck; avoid speculative tuning. |
 | `ce-polish` | Conditional interactive follow-up | Refine the working UI from Hans's browser feedback after the initial implementation. |
 | `ce-dogfood` | Explicit invocation only | Available for a separately requested hands-off browser QA pass; merely listing it does not invoke it. |
 | `ce-commit` | Conditional shipping support | Create a focused commit when needed by the chosen workflow; avoid duplicating commits owned by the shipping pipeline. |
-| `ce-commit-push-pr` | Future shipping stage | Commit, push, and open a PR only during the later user-invoked build/shipping run. |
-| `ce-babysit-pr` | Future shipping stage | Follow the actual PR and CI when the pipeline reaches that stage; no monitor or automation now. |
+| `ce-commit-push-pr` | Active shipping stage | Commit, push, and open a PR only during the later user-invoked build/shipping run. |
+| `ce-babysit-pr` | Active shipping stage | Follow the actual PR and CI when the pipeline reaches that stage; no monitor or automation now. |
 | `ce-resolve-pr-feedback` | Conditional after review | Resolve feedback actually left on the PR. |
 | `ce-compound` | Conditional after verification | Capture non-obvious reusable lessons that are not already explained by the final code and tests. |
 | `ce-compound-refresh` | Conditional maintenance | Audit captured lessons if they later become stale; no learning corpus exists yet. |
@@ -77,4 +81,4 @@ Forcing iOS tests, corpus retuning, external publication, or unrelated integrati
 | `ce-product-pulse` | Not currently applicable | No configured product signals or reporting cadence exists for this portfolio. |
 | `ce-test-xcode` | Not applicable | The deliverable is a website; advertising app-development services does not make this a native iOS project. |
 | `ce-retune` | Not applicable | This is not a skill-corpus tuning task and no benchmark harness was requested. |
-| `lfg` | Later explicit invocation | Orchestrate planning, implementation, review, and PR delivery after the R1 user decision; not invoked in this session. |
+| `lfg` | Invoked | Orchestrates planning, implementation, review, and PR delivery after R1 was resolved. |
