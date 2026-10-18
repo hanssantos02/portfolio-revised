@@ -230,10 +230,29 @@ h1 span {
 .intro-support .primary-link {
   margin-top: 1.75rem;
 }
-.explore {
+.intro-secondary-actions {
   display: flex;
-  width: fit-content;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
   margin-top: 0.75rem;
+}
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--rule);
+  color: var(--accent);
+}
+.resume-link:hover {
+  border-color: var(--accent);
+  background: var(--inset);
+  text-decoration: none;
+}
+.resume-format {
+  font-size: 0.75rem;
 }
 .intro-identity {
   display: flex;
@@ -879,6 +898,7 @@ footer a {
     transform: rotate(90deg) translate(3px, -3px);
   }
   .primary-link,
+  .resume-link,
   .service-action,
   .service-title h3,
   .explorer-controls button,

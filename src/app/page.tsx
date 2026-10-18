@@ -32,9 +32,20 @@ export default function Home() {
               <a href="#contact" className="primary-link">
                 Let’s talk about your project <Arrow />
               </a>
-              <a href="#work" className="text-link explore">
-                Explore the work <Arrow />
-              </a>
+              <div className="intro-secondary-actions">
+                <a href="#work" className="text-link explore">
+                  Explore the work <Arrow />
+                </a>
+                <a
+                  href="/resume-hans-santos.pdf"
+                  className="resume-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View résumé (PDF, opens in a new tab)"
+                >
+                  View résumé <span className="resume-format">PDF</span> <Arrow />
+                </a>
+              </div>
               <div className="intro-identity">
                 <span className="identity-mark" aria-hidden="true" />
                 <p>

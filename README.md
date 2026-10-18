@@ -36,6 +36,8 @@ The locked baseline respects the environment's release-age and peer compatibilit
 
 Edit `src/content/portfolio.ts` for services, deliverable labels, project purpose/capabilities/verified technology, demo availability, and the exact email/Facebook destinations. Put genuine captures in `public/projects/`, with actual dimensions, descriptive alt text, and a truthful caption. The screenshots include explicitly disclosed example or default sample data.
 
+The introduction’s “View résumé” button opens `public/resume-hans-santos.pdf` in a new tab. Replace that file to update the résumé while keeping its URL and button intact.
+
 Each project's `media` is an independent `image`, `diagram`, or `text` entry. To replace the drawer diagram with a real photo, change its media to an image entry and update the caption and provenance. No page redesign is needed. If a demo is unavailable, change its `demo` to `unavailable`; its source remains accessible. See [project evidence](docs/project-evidence.md) for verified source revisions, claims, capture origins, and a replacement example.
 
 Display text and links are server rendered. Client behavior is limited to the service map, section tracking, email copying, and project image failure handling. Enhancement controls are disabled in server-rendered HTML and enabled after hydration through `src/components/use-client-ready.ts`; essential content and destinations work without JavaScript. The font is self-hosted with its license in `src/fonts/`. No database, CMS, form service, runtime external content fetch, or deployment integration is configured.
