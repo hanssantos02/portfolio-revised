@@ -11,9 +11,7 @@ export function Services() {
     >
       <div className="section-heading">
         <h2 id="services-heading">
-          Good software.
-          <br />
-          <span>Thoughtful hardware.</span>
+          Engineering <span>services.</span>
         </h2>
         <p>
           One idea can need more than one discipline. Start with what you need
@@ -21,12 +19,9 @@ export function Services() {
         </p>
       </div>
       <ol className="service-list">
-        {services.map((service, index) => (
+        {services.map((service) => (
           <li key={service.id}>
             <a href="#contact">
-              <span className="service-number" aria-hidden="true">
-                0{index + 1}
-              </span>
               <div className="service-title">
                 <h3>{service.title}</h3>
                 <span>{service.deliverables.join(" / ")}</span>

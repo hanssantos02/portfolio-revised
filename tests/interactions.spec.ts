@@ -120,3 +120,24 @@ test("navigation recovers after the viewport height collapses", async ({
   ).toHaveAttribute("aria-current", "location");
   expect(errors).toEqual([]);
 });
+
+test("build notes open from the keyboard without JavaScript", async ({
+  browser,
+}) => {
+  const page = await browser.newPage({ javaScriptEnabled: false });
+  try {
+    await page.goto("http://127.0.0.1:3133/#ledger-heading");
+    const notes = page
+      .getByRole("article", { name: "Ledger", exact: true })
+      .locator("details");
+    await notes.locator("summary").focus();
+    await page.keyboard.press("Enter");
+    await expect(
+      notes.getByText("Create projects, add tasks, and mark them complete."),
+    ).toBeVisible();
+    await page.keyboard.press("Enter");
+    await expect(notes).not.toHaveAttribute("open", "");
+  } finally {
+    await page.close();
+  }
+});

@@ -1,6 +1,6 @@
 # Hans Santos — Client Services Portfolio
 
-A services-first portfolio built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4. The single page covers web development, app development, electronics engineering, and embedded systems, followed by source-backed personal and hackathon projects, a working approach, and direct contact. The premium editorial design pairs an interactive engineering map with numbered services, dark project spreads, a personal introduction, and a cobalt contact section.
+A services-first portfolio built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4. The single page covers web development, app development, electronics engineering, and embedded systems, followed by source-backed personal and hackathon projects, a working approach, and direct contact. The premium editorial design pairs an interactive exploded drawing with open service rows, dark project spreads, a personal introduction, and a cobalt contact section.
 
 ## Run locally
 
@@ -30,7 +30,7 @@ npm run test:browser
 
 The browser suite starts its own production server on port 3133. It checks section order, contact destinations, hash navigation, keyboard focus, JavaScript-free use, eight viewport widths, enlarged text, reduced motion, failed images, independent media/demo variants, the service explorer, clipboard success/failure, and section tracking. If Chrome is already installed, use `PLAYWRIGHT_CHROMIUM_CHANNEL=chrome npm run test:browser -- --workers=1` instead of downloading Chromium. This environment uses one Chrome worker to avoid browser contention.
 
-The locked baseline respects the environment's release-age and peer compatibility rules: Playwright 1.63.0, TypeScript 6.0.3, ESLint 9.39.5. `npm audit` currently reports five high findings from one unpatched `braces` advisory in the development lint dependency chain. These dependencies are not part of the deployed browser bundle; do not use a forced framework downgrade as an audit fix.
+Run `npm audit --omit=dev` to inspect production dependencies and `npm audit` to include the development toolchain.
 
 ## Update content and evidence
 

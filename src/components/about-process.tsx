@@ -33,9 +33,7 @@ export function AboutProcess() {
       <div className="about-grid">
         <div>
           <h2 id="approach-heading">
-            A person behind
-            <br />
-            every <span className="outlined-word">piece.</span>
+            Meet <span>Hans.</span>
           </h2>
           <div className="maker-mark" aria-hidden="true">
             <svg viewBox="0 0 140 140" fill="none">
@@ -66,10 +64,10 @@ export function AboutProcess() {
             Developer, maker, problem-solver.
           </p>
           <p>
-            Based in Batangas, Philippines, I work across software and
-            electronics. I’m interested in what happens when a useful interface
-            meets a physical system — and in finding the pieces an idea needs to
-            work.
+            I’m a civil engineering graduate based in Batangas, Philippines. I
+            work as an electronics and software engineer at JM 3D Designs. I’m
+            interested in what happens when a useful interface meets a physical
+            system — and in finding the pieces an idea needs to work.
           </p>
           <p>
             Whether it lives in a browser or on a circuit board, I approach a
@@ -79,6 +77,23 @@ export function AboutProcess() {
             Tell me what you’re thinking <Arrow />
           </a>
         </div>
+      </div>
+      <div className="toolkit">
+        <h3>Tools behind the work</h3>
+        <dl>
+          <div>
+            <dt>Web interfaces</dt>
+            <dd>HTML, CSS, JavaScript</dd>
+          </div>
+          <div>
+            <dt>Applications</dt>
+            <dd>React, Next.js, TypeScript</dd>
+          </div>
+          <div>
+            <dt>Embedded systems</dt>
+            <dd>ESP32, C++ / Arduino, UART</dd>
+          </div>
+        </dl>
       </div>
       <div className="process-heading">
         <h3>A clear way forward.</h3>

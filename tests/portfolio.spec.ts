@@ -8,7 +8,7 @@ test("clients can understand services, inspect work, and contact Hans", async ({
 }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "Digital ideas.Real-world solutions.",
+    "From screento circuit.",
   );
   for (const name of [
     "Web development",

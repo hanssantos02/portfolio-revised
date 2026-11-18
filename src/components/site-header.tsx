@@ -69,6 +69,7 @@ export function SiteHeader() {
         {[
           { id: "services", label: "Services" },
           { id: "work", label: "Work" },
+          { id: "approach", label: "About" },
           { id: "contact", label: "Contact" },
         ].map(({ id, label }) => (
           <a

@@ -67,86 +67,64 @@ function CapabilityDrawing({ index }: { index: number }) {
   );
 }
 
-function Hub({ x, y, radius = 46 }: { x: number; y: number; radius?: number }) {
-  return (
-    <g className="map-hub">
-      <circle cx={x} cy={y} r={radius} />
-      <path
-        d={`M${x - 20} ${y - 20}V${y + 20}M${x + 20} ${y - 20}V${y + 20}M${x - 20} ${y}H${x + 20}M${x - 10} ${y + 20}V${y + 5}M${x + 10} ${y - 20}V${y - 5}`}
-      />
-    </g>
-  );
-}
-
+// Four exploded planes share one projection. The selected plane lifts slightly.
 function SystemMap({ selected }: { selected: number }) {
   return (
-    <>
-      <svg
-        viewBox="0 0 760 310"
-        fill="none"
-        aria-hidden="true"
-        className="system-map"
-      >
-        <g className="map-guides" stroke="currentColor" strokeWidth="1">
-          <path d="M24 24H44M24 24V44M736 24H716M736 24V44M24 286H44M24 286V266M736 286H716M736 286V266" />
-          <circle cx="380" cy="150" r="73" strokeDasharray="2 9" />
-        </g>
-        {[
-          "M200 93H258L305 140H334",
-          "M560 93H502L455 140H426",
-          "M200 220H258L305 160H334",
-          "M560 220H502L455 160H426",
-        ].map((path, index) => (
+    <svg viewBox="0 0 480 330" className="assembly" aria-hidden="true">
+      <defs>
+        <pattern
+          id="draft-grid"
+          width="18"
+          height="18"
+          patternUnits="userSpaceOnUse"
+        >
           <path
-            key={`${index}-${selected}`}
-            d={path}
-            pathLength="1"
-            className={`map-path ${selected === index ? "is-selected" : ""}`}
+            d="M18 0H0V18"
+            fill="none"
+            stroke="currentColor"
+            strokeOpacity=".12"
           />
-        ))}
-        <Hub x={380} y={150} />
-        {views.map((view, index) => (
-          <g
-            key={view.label}
-            transform={`translate(${index % 2 ? 560 : 62}, ${index > 1 ? 174 : 45})`}
-            className={`map-node ${selected === index ? "is-selected" : ""}`}
-          >
-            <CapabilityDrawing index={index} />
-            <text x="69" y={index > 1 ? 113 : -16} textAnchor="middle">
-              {view.label.toUpperCase()}
-            </text>
+        </pattern>
+      </defs>
+      <rect width="480" height="330" fill="url(#draft-grid)" />
+      <g fill="none" stroke="currentColor" opacity=".48" strokeDasharray="3 5">
+        <path d="M53 96V250M205 25V180M345 88V245M193 163V308" />
+      </g>
+      {[3, 2, 1, 0].map((index) => {
+        const y = 95 + index * 45;
+        return (
+          <g key={index} transform={`translate(53 ${y})`}>
+            <g
+              className={`assembly-plane ${selected === index ? "active-plane" : ""}`}
+            >
+              <path
+                className="plate-edge"
+                d="M0 0l140 66 152-71v7L140 74 0 8Z"
+              />
+              <g
+                transform="matrix(1.10 -.515 1.52 .715 0 0)"
+                stroke="currentColor"
+                strokeWidth="1.2"
+              >
+                <rect className="plate-face" width="138" height="92" />
+                <g fill="none">
+                  <CapabilityDrawing index={index} />
+                </g>
+              </g>
+              <path d="M292 -5h19l9 -9h12" fill="none" stroke="currentColor" />
+              <text x="339" y="-10">
+                {views[index].label}
+              </text>
+            </g>
           </g>
-        ))}
-      </svg>
-      <svg
-        viewBox="0 0 360 185"
+        );
+      })}
+      <path
+        d="M16 16h11m-5 -5v11m431 292h11m-5 -5v11"
         fill="none"
-        aria-hidden="true"
-        className="mobile-system-map"
-      >
-        <path
-          key={selected}
-          d="M162 91H243"
-          pathLength="1"
-          className="map-path is-selected"
-        />
-        <g transform="translate(24, 45)" className="map-node is-selected">
-          <CapabilityDrawing index={selected} />
-          <text x="69" y="-16" textAnchor="middle">
-            {views[selected].label.toUpperCase()}
-          </text>
-        </g>
-        <circle
-          className="map-guides"
-          cx="285"
-          cy="91"
-          r="51"
-          stroke="currentColor"
-          strokeDasharray="2 7"
-        />
-        <Hub x={285} y={91} radius={36} />
-      </svg>
-    </>
+        stroke="currentColor"
+      />
+    </svg>
   );
 }
 
@@ -160,8 +138,14 @@ export function BuildExplorer() {
       role="group"
       aria-label="Interactive service explorer"
     >
+      <div className="drawing-label">
+        <span>Service explorer</span>
+        <span>Exploded view</span>
+      </div>
+      <div className="sketch-stage">
+        <SystemMap selected={selected} />
+      </div>
       <div className="explorer-toolbar">
-        <span className="explorer-name">Connected capabilities</span>
         <div
           className="explorer-controls"
           role="group"
@@ -187,9 +171,6 @@ export function BuildExplorer() {
         aria-live="polite"
         aria-atomic="true"
       >
-        <div className="sketch-stage">
-          <SystemMap selected={selected} />
-        </div>
         <div className="explorer-caption">
           <div>
             <div className="sketch-flow" aria-hidden="true">
@@ -204,9 +185,7 @@ export function BuildExplorer() {
           </a>
         </div>
       </div>
-      <p className="sketch-note">
-        Illustrative service map · explore how the pieces connect
-      </p>
+      <p className="sketch-note">Illustrative service map</p>
     </div>
   );
 }

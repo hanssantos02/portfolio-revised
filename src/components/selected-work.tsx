@@ -17,12 +17,15 @@ export function ProjectEntry({ project }: { project: Project }) {
         <ProjectMedia media={project.media} />
         <div className="project-description">
           <p className="project-summary">{project.summary}</p>
-          <p className="project-purpose">{project.purpose}</p>
-          <ul>
-            {project.details.map((detail) => (
-              <li key={detail}>{detail}</li>
-            ))}
-          </ul>
+          <details className="build-notes">
+            <summary>Build notes</summary>
+            <p className="project-purpose">{project.purpose}</p>
+            <ul>
+              {project.details.map((detail) => (
+                <li key={detail}>{detail}</li>
+              ))}
+            </ul>
+          </details>
           <p className="project-stack">{project.technologies.join(" · ")}</p>
           <div className="project-actions">
             {project.demo.type === "available" && (

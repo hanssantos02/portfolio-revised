@@ -192,7 +192,7 @@ export const projects: Project[] = [
     },
     demo: {
       type: "pending",
-      note: "Live demo temporarily unavailable. Watch the motion video to see the project in action.",
+      note: "Live demo temporarily unavailable. The source link is unavailable to public visitors. Watch the motion video to see the project in action.",
     },
     evidence: {
       verifiedOn: "2026-10-11",

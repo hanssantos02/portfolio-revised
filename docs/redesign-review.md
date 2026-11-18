@@ -63,3 +63,13 @@ Hardware photos/video remain future owner-supplied evidence. At the initial rede
 Hans supplied Cloak from `/home/nexus/repos/appbuilders-ceres/` on 11 October 2026. The project entry includes a genuine local-interface screenshot with fictional-data and rules-only disclosures, source-backed copy, its repository link, and the exact owner-supplied TikTok motion-video link. Its live-demo placeholder is a disabled native button with no destination; the note explains temporary unavailability. The Apps selector now links to Cloak. Source/capture provenance is recorded in `docs/project-evidence.md`.
 
 After this addition and Hans’s introduction edit, lint, typecheck, and production build passed. The production browser suite passed **33 tests in 51.1s**, including Cloak’s image/caption, source/video destinations, disabled demo, and absence of a broken demo link. Desktop and 390px mobile inspection confirmed readable presentation and no horizontal overflow. These checks do not re-date the earlier independent review or axe scan. Local captures are `.impeccable/review/cloak-desktop.jpg`, `cloak-mobile.jpg`, and `cloak-mobile-actions.jpg`.
+
+## 18 November 2026
+
+The previous cover devoted the full width to a generic headline, then placed the service diagram beneath it. The redesign pairs the introduction with a selectable exploded drawing. Each plane links to project evidence. Project spreads show their summary and actions first, with technical notes in a keyboard-operable native disclosure. The personal introduction groups technologies by discipline.
+
+[Desktop cover](review/desktop.webp) · [Mobile cover](review/mobile.webp) · [Project spread](review/desktop-work.webp)
+
+The production page passed all 34 Playwright checks in Chrome, including widths from 360px to 1920px, enlarged text, reduced motion, navigation, clipboard recovery, image failure, and JavaScript-free build notes. Lint, type checking, and the static production build passed. A local mobile Lighthouse run scored 100 for performance, accessibility, best practices, and SEO, with a largest contentful paint of 0.8 seconds and zero cumulative layout shift. Field performance and assistive-technology usability require separate measurement.
+
+Next.js and its ESLint configuration moved from 16.4.0 to 16.4.6 following a critical production dependency advisory. The production npm audit returned zero findings. The full audit still lists development-toolchain findings.

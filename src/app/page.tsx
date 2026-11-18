@@ -17,48 +17,43 @@ export default function Home() {
           className="intro shell"
           aria-labelledby="intro-heading"
         >
-          <h1 id="intro-heading">
-            Digital ideas.
-            <br />
-            <span>Real-world solutions.</span>
-          </h1>
-          <div className="intro-grid">
-            <div className="intro-support">
-              <p>
-                I’m Hans Santos, A Civil Engineering Graduate. The Electronics Engineer and Software Engineer of JM 3D Designs. I build
-                websites, applications, electronics, and embedded systems that
-                turn your idea into something practical.
-              </p>
-              <a href="#contact" className="primary-link">
-                Let’s talk about your project <Arrow />
-              </a>
-              <div className="intro-secondary-actions">
-                <a href="#work" className="text-link explore">
-                  Explore the work <Arrow />
-                </a>
-                <a
-                  href="/resume-hans-santos.pdf"
-                  className="resume-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View résumé (PDF, opens in a new tab)"
-                >
-                  View résumé <span className="resume-format">PDF</span> <Arrow />
-                </a>
-              </div>
-              <div className="intro-identity">
-                <span className="identity-mark" aria-hidden="true" />
+          <div className="cover">
+            <div className="cover-copy">
+              <h1 id="intro-heading">
+                From screen
+                <br />
+                <span>to circuit.</span>
+              </h1>
+              <div className="intro-support">
                 <p>
-                  Independent by design.
-                  <br />
-                  Batangas, Philippines.
+                  I’m Hans Santos, a developer and electronics maker in
+                  Batangas, Philippines. I build websites, applications, and the
+                  hardware that connects them to the physical world.
                 </p>
+                <a href="#contact" className="primary-link">
+                  Let’s talk about your project <Arrow />
+                </a>
+                <div className="intro-secondary-actions">
+                  <a href="#work" className="text-link explore">
+                    Explore the work <Arrow />
+                  </a>
+                  <a
+                    href="/resume-hans-santos.pdf"
+                    className="resume-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View résumé PDF (opens in a new tab)"
+                  >
+                    View résumé <span className="resume-format">PDF</span>{" "}
+                    <Arrow />
+                  </a>
+                </div>
               </div>
             </div>
             <BuildExplorer />
           </div>
           <div className="intro-foot">
-            <p>From the browser to the circuit board.</p>
+            <p>Hans Christian P. Santos</p>
             <a href="#services">
               Find your starting point <Arrow />
             </a>
@@ -73,7 +68,7 @@ export default function Home() {
           <div className="shell">
             <div className="section-heading work-header">
               <h2 id="work-heading">
-                Ideas, <span>in practice.</span>
+                Selected <span>work.</span>
               </h2>
               <p>
                 A closer look at personal and hackathon builds. Real interfaces,
@@ -91,11 +86,9 @@ export default function Home() {
         >
           <div className="shell contact-grid">
             <h2 id="contact-heading">
-              Have something
+              What are you
               <br />
-              in mind?
-              <br />
-              <span>Let’s make it work.</span>
+              <span>building?</span>
             </h2>
             <div className="contact-body">
               <p>
@@ -121,6 +114,12 @@ export default function Home() {
           <br />
           Batangas, Philippines
         </span>
+        <a href="https://github.com/hanssantos02">
+          GitHub <Arrow />
+        </a>
+        <a href="https://www.linkedin.com/in/hans-santos-342712335/">
+          LinkedIn <Arrow />
+        </a>
         <a href="#intro">
           Back to top <Arrow />
         </a>
